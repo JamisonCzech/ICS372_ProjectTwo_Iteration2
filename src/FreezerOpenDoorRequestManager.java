@@ -30,7 +30,7 @@ public class FreezerOpenDoorRequestManager {
 	 * @param listener
 	 *            an object that wants to listen to the event
 	 */
-	public void addFreezerOpenDoorRequestManager(FreezerOpenDoorRequestListener listener) {
+	public void addFreezerOpenDoorRequestListener(FreezerOpenDoorRequestListener listener) {
 		listenerList.add(FreezerOpenDoorRequestListener.class, listener);
 	}
 
@@ -46,7 +46,7 @@ public class FreezerOpenDoorRequestManager {
 	
 	
 	/**
-	 * Handles the request to cook.
+	 * Handles the request to open door.
 	 * 
 	 * @param event
 	 *            the CookRequestEvent object
