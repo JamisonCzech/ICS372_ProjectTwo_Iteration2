@@ -7,8 +7,7 @@ public class FreezerCloseButton extends GUIButton {
 
 	@Override
 	public void inform(RefrigeratorDisplay display) {
-		// TODO Auto-generated method stub
-
+		
 	}
 
 }

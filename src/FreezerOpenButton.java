@@ -7,8 +7,9 @@ public class FreezerOpenButton extends GUIButton {
 	}
 
 	@Override
-	public void inform(RefrigeratorDisplay display) {
-		// TODO Auto-generated method stub
+	public void inform(RefrigeratorDisplay source) {
+		FreezerOpenDoorRequestManager.instance()
+		.processEvent(new FreezerDoorOpenRequestEvent(source));
 
 	}
 
