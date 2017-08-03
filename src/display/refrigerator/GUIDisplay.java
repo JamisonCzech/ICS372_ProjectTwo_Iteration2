@@ -199,19 +199,25 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener{
 	@Override
 	public void freezerTemp() {
 		//frame.freezerTemp.setText("Freezer temp: " + value);
+
+		
 	}
+	
 	
 	@Override
 	public void freezerDoorOpen() {
 		frame.freezerDoorStatus.setText("Freezer Door <OPEN>");
-			
+		
 	}
+	
+	
 	
 	@Override
 	public void freezerDoorClosed() {
-			
+		
 		frame.freezerDoorStatus.setText("Freezer Door <Closed>");
 	}
+
 	
 	@Override
 	public void fridgeDoorClosed() {
@@ -276,4 +282,7 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener{
 
 		RefrigeratorDisplay display = new GUIDisplay();
 	}
+
+	
+	
 }

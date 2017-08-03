@@ -53,9 +53,10 @@ public abstract class RefrigeratorDisplay extends Observable{
 	
 	public abstract void freezerDoorClosed();
 	
-	public abstract void freezerDoorOpen();
-	
+
 	public abstract void fridgeDoorOpen();
+	
+	public abstract void freezerDoorOpen();
 	
 	
 }

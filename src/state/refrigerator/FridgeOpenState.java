@@ -25,7 +25,9 @@ public class FridgeOpenState extends FridgeState implements FridgeCloseDoorReque
 	public void run() {
 		FridgeCloseDoorRequestManager.instance().addFridgeCloseDoorRequestListener(this);
 		refrigeratorDisplay.fridgeDoorOpen();
+
 		refrigeratorDisplay.fridgeTemp();
+
 		refrigeratorDisplay.turnFridgeLightOn();
 	}
 
