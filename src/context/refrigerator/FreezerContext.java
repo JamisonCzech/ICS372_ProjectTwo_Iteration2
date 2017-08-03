@@ -10,7 +10,7 @@ public class FreezerContext {
 	
 	private FreezerContext() {
 		instance = this;
-		refrigeratorDisplay.instance();
+		refrigeratorDisplay = refrigeratorDisplay.instance();
 		currentState = FreezerClosedState.instance();
 	}
 	

@@ -9,16 +9,19 @@ public abstract class RefrigeratorDisplay extends Observable{
 	protected static FridgeContext fridgeContext;
 	protected static FreezerContext freezerContext;
 	protected static RefrigeratorDisplay instance;
+	
 	protected RefrigeratorDisplay() {
 		instance = this;
+		fridgeContext = FridgeContext.instance();
+		freezerContext = FreezerContext.instance();
 		//context = RefrigeratorContext.instance();
 	}
 	public static RefrigeratorDisplay instance() {
 		return instance;
 	}
 	public void initialize() {
-		fridgeContext = FridgeContext.instance();
-		freezerContext = FreezerContext.instance();
+		//fridgeContext = FridgeContext.instance();
+		//freezerContext = FreezerContext.instance();
 		fridgeContext.initialize();
 		freezerContext.initialize();
 	}
@@ -43,10 +46,13 @@ public abstract class RefrigeratorDisplay extends Observable{
 	
 	public abstract void freezerTemp();
 	
+	public abstract void fridgeDoorClosed();
+	
 	public void freezerDoorClosed() {
 		// TODO Auto-generated method stub
 		
 	}
+	public abstract void fridgeDoorOpen();
 	
 	
 }

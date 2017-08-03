@@ -11,7 +11,7 @@ public class FridgeContext {
 	
 	private FridgeContext() {
 		instance = this;
-		refrigeratorDisplay.instance();
+		refrigeratorDisplay = refrigeratorDisplay.instance();
 		currentState = FridgeClosedState.instance();
 	}
 	

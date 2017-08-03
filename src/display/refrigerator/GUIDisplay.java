@@ -58,6 +58,9 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener{
 		private JLabel fridgeState = new JLabel("Fridge <cooling/idle>");
 		private JLabel freezerState = new JLabel("Freezer <cooling/idle>");
 		
+		private JLabel fridgeDoorStatus = new JLabel("Fridge door: <open/closed>"); //Door Label
+		private JLabel freezerDoorStatus = new JLabel("Freezer door: <open/closed>"); //Door Label
+		
 		private SimpleDisplay() {
 			super("Refrigerator");
 			getContentPane().setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
@@ -80,6 +83,9 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener{
 			doors.add(freezerDoorCloser);
 			
 			JPanel states = new JPanel(new GridLayout(0,2,20,20));
+			states.add(fridgeDoorStatus); //Door Label
+			states.add(freezerDoorStatus); //Door Label
+			
 			states.add(fridgeLight);
 			states.add(freezerLight);
 			states.add(fridgeTemp);
@@ -168,6 +174,16 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener{
 	@Override
 	public void freezerTemp() {
 		//frame.freezerTemp.setText("Freezer temp: " + value);
+	}
+	
+	@Override
+	public void fridgeDoorClosed() {
+		frame.fridgeDoorStatus.setText("Fridge Door <CLOSED>");
+	}
+	
+	@Override
+	public void fridgeDoorOpen() {
+		frame.fridgeDoorStatus.setText("Fridge Door <OPEN>");
 	}
 
 	/**

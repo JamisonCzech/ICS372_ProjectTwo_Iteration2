@@ -14,9 +14,6 @@ public class FreezerClosedState extends FreezerState implements
 	private FreezerClosedState() {
 	}
 
-	
-	
-	
 	public static FreezerClosedState instance() {
 		if (instance == null) {
 			instance = new FreezerClosedState();
