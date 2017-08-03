@@ -48,11 +48,11 @@ public abstract class RefrigeratorDisplay extends Observable{
 	
 	public abstract void fridgeDoorClosed();
 	
-	public void freezerDoorClosed() {
-		// TODO Auto-generated method stub
-		
-	}
+	public abstract void freezerDoorClosed();
+	
 	public abstract void fridgeDoorOpen();
+	
+	public abstract void freezerDoorOpen();
 	
 	
 }
