@@ -25,6 +25,7 @@ public class FreezerClosedState extends FreezerState implements
 	public void run() {
 		FreezerOpenDoorRequestManager.instance().addFreezerOpenDoorRequestListener(this);
 		refrigeratorDisplay.freezerDoorClosed();
+		refrigeratorDisplay.turnFreezerLightOff();
 		refrigeratorDisplay.freezerTemp();	
 	}
 

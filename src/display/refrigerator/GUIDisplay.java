@@ -5,7 +5,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 
-import javax.swing.*;
+import javax.swing.Box;
+import javax.swing.BoxLayout;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 import buttons.refrigerator.FreezerCloseButton;
@@ -16,6 +22,8 @@ import buttons.refrigerator.GUIButton;
 import buttons.refrigerator.SetFreezerButton;
 import buttons.refrigerator.SetFridgeButton;
 import buttons.refrigerator.SetRoomButton;
+import settings.refrigerator.FridgeSettings;
+import settings.refrigerator.Settings;
 
 
 /**
@@ -24,6 +32,7 @@ import buttons.refrigerator.SetRoomButton;
 public class GUIDisplay extends RefrigeratorDisplay implements ActionListener{
 
 	public static SimpleDisplay frame;
+	public static Settings fridgeSettings;
 
 	/**
 	 * Do the usual layout of the frame
@@ -60,6 +69,8 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener{
 		
 		private JLabel fridgeDoorStatus = new JLabel("Fridge door: <open/closed>"); //Door Label
 		private JLabel freezerDoorStatus = new JLabel("Freezer door: <open/closed>"); //Door Label
+		
+		
 		
 		private SimpleDisplay() {
 			super("Refrigerator");
@@ -114,6 +125,20 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener{
 			pack();
 			setLocationRelativeTo(null);//centers GUI display
 			setVisible(true);
+		}
+	}
+	
+	public Integer getInRoomTemp() {
+		int roomTemperature = 0;
+		try{
+			roomTemperature = Integer.parseInt(frame.inRoomTemp.getText());
+			return roomTemperature;
+		}
+		catch(NumberFormatException e) {
+			
+			//set up warning labels
+			//frame.roomTemp.setText("Invalid Format");
+			return null;
 		}
 	}
 		
@@ -177,6 +202,18 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener{
 	}
 	
 	@Override
+	public void freezerDoorOpen() {
+		frame.freezerDoorStatus.setText("Freezer Door <OPEN>");
+			
+	}
+	
+	@Override
+	public void freezerDoorClosed() {
+			
+		frame.freezerDoorStatus.setText("Freezer Door <Closed>");
+	}
+	
+	@Override
 	public void fridgeDoorClosed() {
 		frame.fridgeDoorStatus.setText("Fridge Door <CLOSED>");
 	}
@@ -184,6 +221,7 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener{
 	@Override
 	public void fridgeDoorOpen() {
 		frame.fridgeDoorStatus.setText("Fridge Door <OPEN>");
+		System.out.println("Singleton Main Method Read Test " + FridgeSettings.instance().getCompressorStartDiff());
 	}
 
 	/**
@@ -220,6 +258,11 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener{
 
 
 	public static void main (String args[]) {
+		
+		//Test -----------------------------------------------------------
+		fridgeSettings = FridgeSettings.instance();
+		fridgeSettings.setInstance(1, 2, 3, 4 ,5 , 6, 7, 8);
+		
 //        int i;
 //        String iFile;
 //

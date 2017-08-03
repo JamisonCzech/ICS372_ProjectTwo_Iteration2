@@ -1,7 +1,11 @@
 package buttons.refrigerator;
 import display.refrigerator.RefrigeratorDisplay;
+import event.refrigerator.RoomTemperatureSetEvent;
+import manager.refrigerator.RoomTemperatureSetManager;
 
 public class SetRoomButton extends GUIButton {
+	
+	//RoomTemperatureSetManager tempManager; 
 
 	public SetRoomButton(String string) {
 		super(string);
@@ -9,8 +13,9 @@ public class SetRoomButton extends GUIButton {
 	}
 
 	@Override
-	public void inform(RefrigeratorDisplay display) {
-		// TODO Auto-generated method stub
+	public void inform(RefrigeratorDisplay source) {
+		RoomTemperatureSetManager.instance()
+		.processEvent(new RoomTemperatureSetEvent(source));
 
 	}
 

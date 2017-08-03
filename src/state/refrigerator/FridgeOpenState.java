@@ -1,8 +1,8 @@
 package state.refrigerator;
 
 import event.refrigerator.FridgeDoorCloseRequestEvent;
-import manager.refrigerator.FridgeCloseDoorRequestManager;
 import listener.refrigerator.FridgeCloseDoorRequestListener;
+import manager.refrigerator.FridgeCloseDoorRequestManager;
 
 public class FridgeOpenState extends FridgeState implements FridgeCloseDoorRequestListener {
 
@@ -25,13 +25,14 @@ public class FridgeOpenState extends FridgeState implements FridgeCloseDoorReque
 	public void run() {
 		FridgeCloseDoorRequestManager.instance().addFridgeCloseDoorRequestListener(this);
 		refrigeratorDisplay.fridgeDoorOpen();
-		refrigeratorDisplay.fridgeTemp();	
+		refrigeratorDisplay.fridgeTemp();
+		refrigeratorDisplay.turnFridgeLightOn();
 	}
 
 
 	@Override
 	public void leave() {
-		
+		FridgeCloseDoorRequestManager.instance().removeFridgeCloseDoorRequestListener(this);
 	}
 
 	

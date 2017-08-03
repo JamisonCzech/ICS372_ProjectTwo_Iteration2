@@ -25,6 +25,7 @@ public class FreezerContext {
 		instance.changeCurrentState(FreezerClosedState.instance());
 	}
 	
+	
 	public void changeCurrentState(FreezerState nextState) {
 		currentState.leave();
 		currentState = nextState;

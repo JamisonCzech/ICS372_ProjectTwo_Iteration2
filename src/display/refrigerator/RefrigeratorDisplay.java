@@ -26,6 +26,9 @@ public abstract class RefrigeratorDisplay extends Observable{
 		freezerContext.initialize();
 	}
 	
+	public abstract Integer getInRoomTemp();
+	
+	
 	public abstract void turnFridgeLightOn();
 	
 	public abstract void turnFridgeLightOff();
@@ -48,10 +51,10 @@ public abstract class RefrigeratorDisplay extends Observable{
 	
 	public abstract void fridgeDoorClosed();
 	
-	public void freezerDoorClosed() {
-		// TODO Auto-generated method stub
-		
-	}
+	public abstract void freezerDoorClosed();
+	
+	public abstract void freezerDoorOpen();
+	
 	public abstract void fridgeDoorOpen();
 	
 	

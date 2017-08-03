@@ -1,6 +1,7 @@
 package state.refrigerator;
 import event.refrigerator.FreezerDoorCloseRequestEvent;
 import listener.refrigerator.FreezerCloseDoorRequestListener;
+import manager.refrigerator.FreezerCloseDoorRequestManager;
 
 public class FreezerOpenState extends FreezerState implements
 		FreezerCloseDoorRequestListener{
@@ -30,7 +31,10 @@ public class FreezerOpenState extends FreezerState implements
 
 	@Override
 	public void run() {
-		
+		FreezerCloseDoorRequestManager.instance().addFreezerCloseDoorRequestListener(this);
+		refrigeratorDisplay.freezerDoorOpen();
+		refrigeratorDisplay.freezerTemp();
+		refrigeratorDisplay.turnFreezerLightOn();
 		
 	}
 
@@ -39,7 +43,7 @@ public class FreezerOpenState extends FreezerState implements
 
 	@Override
 	public void leave() {
-		
+		FreezerCloseDoorRequestManager.instance().removeFreezerCloseDoorRequestListener(this);
 		
 	}
 
