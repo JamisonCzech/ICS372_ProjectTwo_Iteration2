@@ -1,16 +1,21 @@
 package buttons.refrigerator;
 import display.refrigerator.RefrigeratorDisplay;
+import event.refrigerator.FreezerTemperatureSetEvent;
+import event.refrigerator.FridgeTemperatureSetEvent;
+import manager.refrigerator.FreezerTemperatureSetManager;
+import manager.refrigerator.FridgeTemperatureSetManager;
 
 public class SetFridgeButton extends GUIButton {
 
 	public SetFridgeButton(String string) {
 		super(string);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	@Override
-	public void inform(RefrigeratorDisplay display) {
-		// TODO Auto-generated method stub
+	public void inform(RefrigeratorDisplay source) {
+		FridgeTemperatureSetManager.instance()
+		.processEvent(new FridgeTemperatureSetEvent(source));
 
 	}
 

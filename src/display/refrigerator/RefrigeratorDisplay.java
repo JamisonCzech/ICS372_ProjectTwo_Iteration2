@@ -20,14 +20,17 @@ public abstract class RefrigeratorDisplay extends Observable{
 		return instance;
 	}
 	public void initialize() {
-		//fridgeContext = FridgeContext.instance();
-		//freezerContext = FreezerContext.instance();
+		fridgeContext = FridgeContext.instance();
+		freezerContext = FreezerContext.instance();
 		fridgeContext.initialize();
 		freezerContext.initialize();
 	}
 	
 	public abstract Integer getInRoomTemp();
 	
+	public abstract Integer getFreezerTemp();
+	
+	public abstract Integer getFridgeTemp();
 	
 	public abstract void turnFridgeLightOn();
 	

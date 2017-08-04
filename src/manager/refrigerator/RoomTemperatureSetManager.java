@@ -5,6 +5,7 @@ import javax.swing.event.EventListenerList;
 import display.refrigerator.RefrigeratorDisplay;
 import event.refrigerator.RoomTemperatureSetEvent;
 import listener.refrigerator.RoomTemperatureSetListener;
+import settings.refrigerator.FreezerSettings;
 import settings.refrigerator.FridgeSettings;
 
 public class RoomTemperatureSetManager {
@@ -13,13 +14,14 @@ public class RoomTemperatureSetManager {
 	private static RoomTemperatureSetManager instance;
 	private static RefrigeratorDisplay display;
 	
-	private static FridgeSettings settings;
+	private static FridgeSettings fridgeSettings;
+	private static FreezerSettings freezergeSettings;
 	
 	/**
 	 * Private to make it a singleton
 	 */
 	private RoomTemperatureSetManager() {
-		settings = FridgeSettings.instance();
+		fridgeSettings = FridgeSettings.instance();
 		
 	}
 
@@ -63,7 +65,8 @@ public class RoomTemperatureSetManager {
 	 *            the Temperature Event object
 	 */
 	public void processEvent(RoomTemperatureSetEvent event) {
-		//settings.setDesiredRefrigeratorTemp(display.getInRoomTemp());
+		//fridgeSettings.setDesiredRefrigeratorTemp(display.getInRoomTemp());
+		//freezergeSettings.setDesiredRefrigeratorTemp(display.getInRoomTemp());
 //		EventListener[] listeners = listenerList
 //				.getListeners(RoomTemperatureSetListener.class);
 //		for (int index = 0; index < listeners.length; index++) {

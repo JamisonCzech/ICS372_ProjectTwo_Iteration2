@@ -1,6 +1,6 @@
 package settings.refrigerator;
 
-public class FreezerSettings extends Settings{
+public class FreezerSettings extends Settings {
 
 	private static FreezerSettings instance;
 
