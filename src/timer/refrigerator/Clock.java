@@ -41,7 +41,7 @@ public class Clock extends Observable implements Runnable {
 	public void run() {
 		try {
 			while (true) {
-				Thread.sleep(100);
+				Thread.sleep(1000);
 				setChanged();
 				notifyObservers(Events.CLOCK_TICKED_EVENT);
 			}
