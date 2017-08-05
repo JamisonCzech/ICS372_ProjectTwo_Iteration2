@@ -63,7 +63,9 @@ public class FreezerOpenState extends FreezerState
 	public void timerRanOut(FreezerTimerRanOutEvent event) {
 		int currentTemp = freezerSettings.getCurrentTemp();
 		int newTemp = currentTemp + 1;
-		freezerSettings.setCurrentTemp(newTemp);
+		if (freezerSettings.getDesiredRoomTemp() > currentTemp) {
+			freezerSettings.setCurrentTemp(newTemp);
+		}
 		display.freezerTemp(freezerSettings.getCurrentTemp());
 
 		FreezerTimer.instance().setTimeValue(freezerSettings.getRateLossDoorOpen());

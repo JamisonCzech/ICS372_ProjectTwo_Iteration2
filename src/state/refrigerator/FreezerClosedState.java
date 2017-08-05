@@ -40,7 +40,6 @@ public class FreezerClosedState extends FreezerState
 		display.freezerTemp(freezerSettings.getCurrentTemp());
 		display.turnFreezerLightOff();
 		display.freezerIdle();
-		System.out.println("Enter Freezer Run");
 	}
 
 	@Override
@@ -59,7 +58,6 @@ public class FreezerClosedState extends FreezerState
 	public void timerTicked(FreezerTimerTickedEvent event) {
 		// Immediately go to cooling state if desired temp is adjusted below
 		// current temp
-		System.out.println("Freezer Ticked");
 		if (freezerSettings.getCurrentTemp() >= (freezerSettings.getDesiredRefrigeratorTemp()
 				+ freezerSettings.getCompressorStartDiff())) {
 			freezerContext.changeCurrentState(FreezerCoolingState.instance());
@@ -73,7 +71,9 @@ public class FreezerClosedState extends FreezerState
 	public void timerRanOut(FreezerTimerRanOutEvent event) {
 		int currentTemp = freezerSettings.getCurrentTemp();
 		int newTemp = currentTemp + 1;
-		freezerSettings.setCurrentTemp(newTemp);
+		if (freezerSettings.getDesiredRoomTemp() > currentTemp || freezerSettings.getDesiredRefrigeratorTemp() > currentTemp ) {
+			freezerSettings.setCurrentTemp(newTemp);
+		}
 		display.freezerTemp(freezerSettings.getCurrentTemp());
 		if (freezerSettings.getCurrentTemp() >= (freezerSettings.getDesiredRefrigeratorTemp()
 				+ freezerSettings.getCompressorStartDiff())) {

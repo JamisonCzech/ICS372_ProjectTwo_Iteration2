@@ -63,7 +63,11 @@ public class FridgeOpenState extends FridgeState
 	public void timerRanOut(FridgeTimerRanOutEvent event) {
 		int currentTemp = fridgeSettings.getCurrentTemp();
 		int newTemp = currentTemp + 1;
-		fridgeSettings.setCurrentTemp(newTemp);
+		
+		if (fridgeSettings.getDesiredRoomTemp() > currentTemp) {
+			fridgeSettings.setCurrentTemp(newTemp);
+		}
+		
 		display.fridgeTemp(fridgeSettings.getCurrentTemp());
 
 		FridgeTimer.instance().setTimeValue(fridgeSettings.getRateLossDoorOpen());

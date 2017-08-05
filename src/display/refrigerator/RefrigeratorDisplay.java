@@ -5,6 +5,8 @@ import javax.swing.JTextField;
 
 import context.refrigerator.FreezerContext;
 import context.refrigerator.FridgeContext;
+import timer.refrigerator.FreezerTimer;
+import timer.refrigerator.FridgeTimer;
 
 public abstract class RefrigeratorDisplay extends Observable{
 	
@@ -16,16 +18,16 @@ public abstract class RefrigeratorDisplay extends Observable{
 		instance = this;
 		fridgeContext = FridgeContext.instance();
 		freezerContext = FreezerContext.instance();
-		//context = RefrigeratorContext.instance();
+		
 	}
 	public static RefrigeratorDisplay instance() {
 		return instance;
 	}
 	public void initialize() {
-		fridgeContext = FridgeContext.instance();
-		freezerContext = FreezerContext.instance();
 		fridgeContext.initialize();
 		freezerContext.initialize();
+		FridgeTimer.instance().initialize();
+		FreezerTimer.instance().initialize();
 	}
 	
 	public abstract Integer getInRoomTemp();
@@ -58,7 +60,6 @@ public abstract class RefrigeratorDisplay extends Observable{
 	
 	public abstract void freezerDoorClosed();
 	
-
 	public abstract void fridgeDoorOpen();
 	
 	public abstract void freezerDoorOpen();

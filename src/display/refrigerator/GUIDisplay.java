@@ -135,6 +135,7 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener {
             pack();
             setLocationRelativeTo(null);// centers GUI display
             setVisible(true);
+            setDefaultCloseOperation(EXIT_ON_CLOSE);
         }
     }
 
@@ -305,12 +306,7 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener {
 
 
         RefrigeratorDisplay display = new GUIDisplay();
-        //display.fridgeTemp();
-        //display.freezerTemp();
-//		Clock newClock = Clock.instance();
-//		newClock.run();
-        FridgeTimer fridgeTime = FridgeTimer.instance();
-        FreezerTimer freezerTime = FreezerTimer.instance();
+
     }// end main
 
 }

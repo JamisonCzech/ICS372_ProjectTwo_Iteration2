@@ -3,19 +3,18 @@ package timer.refrigerator;
 import java.util.Observable;
 import java.util.Observer;
 
-public class FridgeTimer implements Observer{
+/**
+ * The Timer for the fridge
+ *
+ */
+public class FridgeTimer extends Timer{
 
-	
-	
-		private static FridgeTimer instance;
-		private int timeValue;
+	private static FridgeTimer instance;
 
 		/**
 		 * For singleton
 		 */
 		private FridgeTimer() {
-			instance = this;
-			Clock.instance().addObserver(instance);
 		}
 
 		/**
@@ -31,35 +30,6 @@ public class FridgeTimer implements Observer{
 		}
 
 		/**
-		 * Set the time for the timer
-		 * 
-		 * @param value
-		 *            timer initial value
-		 */
-		public void setTimeValue(int value) {
-			this.timeValue = value;
-		}
-
-//		/**
-//		 * Add to the time value
-//		 * 
-//		 * @param value
-//		 *            extra time for the time value
-//		 */
-//		public void addTimeValue(int value) {
-//			timeValue += value;
-//		}
-
-		/**
-		 * Get the remaining time
-		 * 
-		 * @return
-		 */
-		public int getTimeValue() {
-			return timeValue;
-		}
-
-		/**
 		 * Get the clock tick and process it
 		 */
 		@Override
@@ -71,8 +41,5 @@ public class FridgeTimer implements Observer{
 				FridgeTimerTickedManager.instance().processEvent(
 						new FridgeTimerTickedEvent(instance));
 			}
-
 		}
-	
-	
 }

@@ -127,7 +127,7 @@ public class FileChooser {
      */
     public void initialFridgeSettings() {
         int startingFridgeTemp = ((fridgeHigh + fridgeLow) / 2);
-        int startingRoomTemp = ((roomHigh - roomLow) / 2);
+        int startingRoomTemp = ((roomHigh + roomLow) / 2);
 
         fridgeSettings = FridgeSettings.instance();
 
@@ -144,7 +144,7 @@ public class FileChooser {
      */
     public void initialFreezerSettings() {
         int startingFreezerTemp = ((freezerHigh + freezerLow) / 2);
-        int startingRoomTemp = ((roomHigh - roomLow) / 2);
+        int startingRoomTemp = ((roomHigh + roomLow) / 2);
 
         freezerSettings = FreezerSettings.instance();
 

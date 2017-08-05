@@ -56,7 +56,6 @@ public class FridgeClosedState extends FridgeState
 
 	@Override
 	public void timerTicked(FridgeTimerTickedEvent event) {
-		System.out.println("Fridge Ticked");
 		// Immediately go to cooling state if desired temp is adjusted below
 		// current temp
 		if (fridgeSettings.getCurrentTemp() >= (fridgeSettings.getDesiredRefrigeratorTemp()
@@ -72,7 +71,10 @@ public class FridgeClosedState extends FridgeState
 	public void timerRanOut(FridgeTimerRanOutEvent event) {
 		int currentTemp = fridgeSettings.getCurrentTemp();
 		int newTemp = currentTemp + 1;
-		fridgeSettings.setCurrentTemp(newTemp);
+		if (fridgeSettings.getDesiredRoomTemp() > currentTemp || fridgeSettings.getDesiredRefrigeratorTemp() > currentTemp ) {
+			fridgeSettings.setCurrentTemp(newTemp);
+		}
+		
 		display.fridgeTemp(fridgeSettings.getCurrentTemp());
 		if (fridgeSettings.getCurrentTemp() >= (fridgeSettings.getDesiredRefrigeratorTemp()
 				+ fridgeSettings.getCompressorStartDiff())) {
