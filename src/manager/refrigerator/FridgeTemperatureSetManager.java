@@ -22,7 +22,6 @@ public class FridgeTemperatureSetManager {
 	 * Private to make it a singleton
 	 */
 	private  FridgeTemperatureSetManager() {
-		fridgeSettings = FridgeSettings.instance();
 	}
 	
 	/**

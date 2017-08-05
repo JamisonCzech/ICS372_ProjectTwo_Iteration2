@@ -4,13 +4,13 @@ import state.refrigerator.FreezerClosedState;
 import state.refrigerator.FreezerState;
 
 public class FreezerContext {
-	private static RefrigeratorDisplay refrigeratorDisplay;
+	private static RefrigeratorDisplay display;
 	private FreezerState currentState;
 	private static FreezerContext instance;
 	
 	private FreezerContext() {
 		instance = this;
-		refrigeratorDisplay = refrigeratorDisplay.instance();
+		display = display.instance();
 		currentState = FreezerClosedState.instance();
 	}
 	
@@ -33,7 +33,7 @@ public class FreezerContext {
 	}
 	
 	public RefrigeratorDisplay getDisplay() {
-		return refrigeratorDisplay;
+		return display;
 	}
 
 }

@@ -10,14 +10,14 @@ import javax.swing.event.EventListenerList;
  * @author mh6624pa
  *
  */
-public class TimerRanOutManager {
+public class FridgeTimerRanOutManager {
 	private EventListenerList listenerList = new EventListenerList();
-	private static TimerRanOutManager instance;
+	private static FridgeTimerRanOutManager instance;
 
 	/**
 	 * Private for making the class a singleton
 	 */
-	private TimerRanOutManager() {
+	private FridgeTimerRanOutManager() {
 	}
 
 	/**
@@ -25,9 +25,9 @@ public class TimerRanOutManager {
 	 * 
 	 * @return the only instance of the class
 	 */
-	public static TimerRanOutManager instance() {
+	public static FridgeTimerRanOutManager instance() {
 		if (instance == null) {
-			instance = new TimerRanOutManager();
+			instance = new FridgeTimerRanOutManager();
 		}
 		return instance;
 	}
@@ -38,8 +38,8 @@ public class TimerRanOutManager {
 	 * @param listener
 	 *            the listener to be added
 	 */
-	public void addTimerRanOutListener(TimerRanOutListener listener) {
-		listenerList.add(TimerRanOutListener.class, listener);
+	public void addTimerRanOutListener(FridgeTimerRanOutListener listener) {
+		listenerList.add(FridgeTimerRanOutListener.class, listener);
 	}
 
 	/**
@@ -48,8 +48,8 @@ public class TimerRanOutManager {
 	 * @param listener
 	 *            the listener to be removed
 	 */
-	public void removeTimerRanOutListener(TimerRanOutListener listener) {
-		listenerList.remove(TimerRanOutListener.class, listener);
+	public void removeTimerRanOutListener(FridgeTimerRanOutListener listener) {
+		listenerList.remove(FridgeTimerRanOutListener.class, listener);
 	}
 
 	/**
@@ -58,11 +58,11 @@ public class TimerRanOutManager {
 	 * @param event
 	 *            the TimerRanoutEvent object
 	 */
-	public void processEvent(TimerRanOutEvent event) {
+	public void processEvent(FridgeTimerRanOutEvent event) {
 		EventListener[] listeners = listenerList
-				.getListeners(TimerRanOutListener.class);
+				.getListeners(FridgeTimerRanOutListener.class);
 		for (int index = 0; index < listeners.length; index++) {
-			((TimerRanOutListener) listeners[index]).timerRanOut(event);
+			((FridgeTimerRanOutListener) listeners[index]).timerRanOut(event);
 		}
 	}
 }

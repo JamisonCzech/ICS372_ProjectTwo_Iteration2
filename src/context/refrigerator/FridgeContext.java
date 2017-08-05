@@ -6,14 +6,14 @@ import state.refrigerator.FridgeState;
 
 public class FridgeContext {
 	
-	private static RefrigeratorDisplay refrigeratorDisplay;
+	private static RefrigeratorDisplay display;
 	private FridgeState currentState;
 	private static FridgeContext instance;
 	private static FridgeSettings settings;
 	
 	private FridgeContext() {
 		instance = this;
-		refrigeratorDisplay = refrigeratorDisplay.instance();
+		display = RefrigeratorDisplay.instance();
 		currentState = FridgeClosedState.instance();
 		settings = FridgeSettings.instance();
 	}
@@ -37,7 +37,7 @@ public class FridgeContext {
 	}
 	
 	public RefrigeratorDisplay getDisplay() {
-		return refrigeratorDisplay;
+		return display;
 	}
 
 }

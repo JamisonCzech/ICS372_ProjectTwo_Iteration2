@@ -7,12 +7,12 @@ import java.util.EventListener;
  * @author Brahma Dathan
  *
  */
-public interface TimerTickedListener extends EventListener {
+public interface FridgeTimerTickedListener extends EventListener {
 	/**
 	 * When the timer ticks, this method gets called
 	 * 
 	 * @param event
 	 *            the event object
 	 */
-	public void timerTicked(TimerTickedEvent event);
+	public void timerTicked(FridgeTimerTickedEvent event);
 }

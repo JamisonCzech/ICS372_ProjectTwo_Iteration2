@@ -1,15 +1,18 @@
 package state.refrigerator;
 import context.refrigerator.FridgeContext;
 import display.refrigerator.RefrigeratorDisplay;
+import settings.refrigerator.FridgeSettings;
 
 public abstract class FridgeState {
 
 	protected static FridgeContext fridgeContext;
-	protected static RefrigeratorDisplay refrigeratorDisplay;
+	protected static RefrigeratorDisplay display;
+	protected static FridgeSettings fridgeSettings;
 	
 	protected FridgeState(){
 		fridgeContext = FridgeContext.instance();
-		refrigeratorDisplay = fridgeContext.getDisplay();
+		display = fridgeContext.getDisplay();
+		fridgeSettings = FridgeSettings.instance();
 	}
 	
 	public abstract void leave();

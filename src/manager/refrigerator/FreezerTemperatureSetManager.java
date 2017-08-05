@@ -23,7 +23,6 @@ public class FreezerTemperatureSetManager {
 	 * Private to make it a singleton
 	 */
 	private  FreezerTemperatureSetManager() {
-		freezerSettings = FreezerSettings.instance();
 	}
 	
 	/**

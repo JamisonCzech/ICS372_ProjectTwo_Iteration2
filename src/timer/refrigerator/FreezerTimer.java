@@ -6,14 +6,14 @@ import java.util.Observer;
  * The Timer for the microwave
  *
  */
-public class Timer implements Observer {
-	private static Timer instance;
+public class FreezerTimer implements Observer {
+	private static FreezerTimer instance;
 	private int timeValue;
 
 	/**
 	 * For singleton
 	 */
-	private Timer() {
+	private FreezerTimer() {
 		instance = this;
 		Clock.instance().addObserver(instance);
 	}
@@ -23,9 +23,9 @@ public class Timer implements Observer {
 	 * 
 	 * @return the instance
 	 */
-	public static Timer instance() {
+	public static FreezerTimer instance() {
 		if (instance == null) {
-			instance = new Timer();
+			instance = new FreezerTimer();
 		}
 		return instance;
 	}
@@ -40,24 +40,24 @@ public class Timer implements Observer {
 		this.timeValue = value;
 	}
 
-	/**
-	 * Add to the time value
-	 * 
-	 * @param value
-	 *            extra time for the time value
-	 */
-	public void addTimeValue(int value) {
-		timeValue += value;
-	}
-
-	/**
-	 * Get the remaining time
-	 * 
-	 * @return
-	 */
-	public int getTimeValue() {
-		return timeValue;
-	}
+//	/**
+//	 * Add to the time value
+//	 * 
+//	 * @param value
+//	 *            extra time for the time value
+//	 */
+//	public void addTimeValue(int value) {
+//		timeValue += value;
+//	}
+//
+//	/**
+//	 * Get the remaining time
+//	 * 
+//	 * @return
+//	 */
+//	public int getTimeValue() {
+//		return timeValue;
+//	}
 
 	/**
 	 * Get the clock tick and process it
@@ -65,11 +65,11 @@ public class Timer implements Observer {
 	@Override
 	public void update(Observable clock, Object value) {
 		if (--timeValue == 0) {
-			TimerRanOutManager.instance().processEvent(
-					new TimerRanOutEvent(instance));
+			FridgeTimerRanOutManager.instance().processEvent(
+					new FridgeTimerRanOutEvent(instance));
 		} else {
-			TimerTickedManager.instance().processEvent(
-					new TimerTickedEvent(instance));
+			FridgeTimerTickedManager.instance().processEvent(
+					new FridgeTimerTickedEvent(instance));
 		}
 
 	}

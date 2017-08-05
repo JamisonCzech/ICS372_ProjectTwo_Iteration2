@@ -29,6 +29,8 @@ import buttons.refrigerator.SetRoomButton;
 import settings.refrigerator.FreezerSettings;
 import settings.refrigerator.FridgeSettings;
 import settings.refrigerator.Settings;
+import timer.refrigerator.Clock;
+import timer.refrigerator.FridgeTimer;
 
 /**
  * This GUI class implements the RefrigeratorDisplay interface
@@ -245,8 +247,9 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener {
 	}
 
 	@Override
-	public void fridgeTemp() {
-		frame.fridgeTemp.setText("Fridge temp: " + FridgeSettings.instance().getCurrentTemp());
+	public void fridgeTemp(int fridgeTemp) {
+		//frame.fridgeTemp.setText("Fridge temp: " + FridgeSettings.instance().getCurrentTemp());
+		frame.fridgeTemp.setText("Fridge temp: " + fridgeTemp);
 	}
 
 	@Override
@@ -403,8 +406,11 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener {
 		freezerSettings.setDesiredRoomTemp(startingRoomTemp);
 
 		RefrigeratorDisplay display = new GUIDisplay();
-		display.fridgeTemp();
+		//display.fridgeTemp();
 		display.freezerTemp();
+//		Clock newClock = Clock.instance();
+//		newClock.run();
+		FridgeTimer time = FridgeTimer.instance();
 	}// end main
 
 }

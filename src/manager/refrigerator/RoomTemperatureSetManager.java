@@ -21,7 +21,6 @@ public class RoomTemperatureSetManager {
 	 * Private to make it a singleton
 	 */
 	private RoomTemperatureSetManager() {
-		fridgeSettings = FridgeSettings.instance();
 	}
 
 	/**
@@ -67,7 +66,7 @@ public class RoomTemperatureSetManager {
 		
 		fridgeSettings = FridgeSettings.instance();
 		freezerSettings = FreezerSettings.instance();
-		RefrigeratorDisplay display = RefrigeratorDisplay.instance();
+		display = RefrigeratorDisplay.instance();
 
 		try {
 			int roomTemp = display.getInRoomTemp();

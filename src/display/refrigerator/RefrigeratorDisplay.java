@@ -50,7 +50,7 @@ public abstract class RefrigeratorDisplay extends Observable{
 	
 	public abstract void freezerIdle();
 	
-	public abstract void fridgeTemp();
+	public abstract void fridgeTemp(int temperature);
 	
 	public abstract void freezerTemp();
 	

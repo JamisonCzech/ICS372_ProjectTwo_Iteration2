@@ -18,6 +18,7 @@ public class Clock extends Observable implements Runnable {
 	 */
 	private Clock() {
 		thread.start();
+		
 	}
 
 	/**

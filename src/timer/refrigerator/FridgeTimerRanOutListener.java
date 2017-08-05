@@ -8,7 +8,7 @@ import java.util.EventListener;
  * @author Brahma Dathan
  *
  */
-public interface TimerRanOutListener extends EventListener {
+public interface FridgeTimerRanOutListener extends EventListener {
 	/**
 	 * This method should implement the functionality to handle the situation of
 	 * the timer running out.
@@ -16,5 +16,5 @@ public interface TimerRanOutListener extends EventListener {
 	 * @param event
 	 *            the description of the event
 	 */
-	public void timerRanOut(TimerRanOutEvent event);
+	public void timerRanOut(FridgeTimerRanOutEvent event);
 }
