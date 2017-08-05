@@ -44,10 +44,8 @@ public class FridgeCoolingState extends FridgeState implements FridgeTimerRanOut
 		display.fridgeDoorClosed();
 		display.turnFridgeLightOff();
 		display.fridgeCooling();
-		display.fridgeTemp(fridgeSettings.getCurrentTemp());
-		
+		display.fridgeTemp(fridgeSettings.getCurrentTemp());	
 	}
-
 
 	@Override
 	public void timerTicked(FridgeTimerTickedEvent event) {
@@ -58,9 +56,7 @@ public class FridgeCoolingState extends FridgeState implements FridgeTimerRanOut
 		else {
 			display.fridgeTemp(fridgeSettings.getCurrentTemp());
 		}
-		
 	}
-
 
 	@Override
 	public void timerRanOut(FridgeTimerRanOutEvent event) {
@@ -71,15 +67,11 @@ public class FridgeCoolingState extends FridgeState implements FridgeTimerRanOut
 		if (fridgeSettings.getCurrentTemp() <= (fridgeSettings.getDesiredRefrigeratorTemp())) {
 			fridgeContext.changeCurrentState(FridgeClosedState.instance());
 		}
-		
 		FridgeTimer.instance().setTimeValue(fridgeSettings.getCoolRate());
-		
 	}
 
 	@Override
 	public void openDoorRequested(FridgeDoorOpenRequestEvent event) {
 		fridgeContext.changeCurrentState(FridgeOpenState.instance());
-		
 	}
-	
 }

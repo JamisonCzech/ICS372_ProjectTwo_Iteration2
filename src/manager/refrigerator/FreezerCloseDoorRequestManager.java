@@ -1,4 +1,5 @@
 package manager.refrigerator;
+
 import java.util.EventListener;
 
 import javax.swing.event.EventListenerList;
@@ -9,8 +10,7 @@ import listener.refrigerator.FreezerCloseDoorRequestListener;
 public class FreezerCloseDoorRequestManager {
 	private EventListenerList listenerList = new EventListenerList();
 	private static FreezerCloseDoorRequestManager instance;
-	
-	
+
 	/**
 	 * Private to make it a singleton
 	 */
@@ -28,6 +28,7 @@ public class FreezerCloseDoorRequestManager {
 		}
 		return instance;
 	}
+
 	/**
 	 * Adds a listener
 	 * 
@@ -47,8 +48,7 @@ public class FreezerCloseDoorRequestManager {
 	public void removeFreezerCloseDoorRequestListener(FreezerCloseDoorRequestListener listener) {
 		listenerList.remove(FreezerCloseDoorRequestListener.class, listener);
 	}
-	
-	
+
 	/**
 	 * Handles the request to close doors.
 	 * 
@@ -56,11 +56,9 @@ public class FreezerCloseDoorRequestManager {
 	 *            the CookRequestEvent object
 	 */
 	public void processEvent(FreezerDoorCloseRequestEvent event) {
-		EventListener[] listeners = listenerList
-				.getListeners(FreezerCloseDoorRequestListener.class);
+		EventListener[] listeners = listenerList.getListeners(FreezerCloseDoorRequestListener.class);
 		for (int index = 0; index < listeners.length; index++) {
 			((FreezerCloseDoorRequestListener) listeners[index]).closeDoorRequested(event);
 		}
 	}
-
 }

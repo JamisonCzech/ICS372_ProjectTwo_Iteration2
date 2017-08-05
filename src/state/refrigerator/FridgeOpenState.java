@@ -11,37 +11,36 @@ import timer.refrigerator.FridgeTimerTickedEvent;
 import timer.refrigerator.FridgeTimerTickedListener;
 import timer.refrigerator.FridgeTimerTickedManager;
 
-public class FridgeOpenState extends FridgeState implements FridgeCloseDoorRequestListener, FridgeTimerRanOutListener, FridgeTimerTickedListener {
+public class FridgeOpenState extends FridgeState
+		implements FridgeCloseDoorRequestListener, FridgeTimerRanOutListener, FridgeTimerTickedListener {
 
 	private static FridgeOpenState instance;
-	
+
 	/**
 	 * Private to make it a singleton
 	 */
 	private FridgeOpenState() {
 	}
-	
+
 	public static FridgeOpenState instance() {
 		if (instance == null) {
 			instance = new FridgeOpenState();
 		}
 		return instance;
 	}
-	
+
 	@Override
 	public void run() {
 		FridgeCloseDoorRequestManager.instance().addFridgeCloseDoorRequestListener(this);
 		FridgeTimerRanOutManager.instance().addTimerRanOutListener(this);
 		FridgeTimerTickedManager.instance().addTimerTickedListener(this);
 		FridgeTimer.instance().setTimeValue(fridgeSettings.getRateLossDoorOpen());
+
 		display.fridgeDoorOpen();
-
 		display.fridgeTemp(fridgeSettings.getCurrentTemp());
-
 		display.turnFridgeLightOn();
 		display.fridgeIdle();
 	}
-
 
 	@Override
 	public void leave() {
@@ -50,17 +49,14 @@ public class FridgeOpenState extends FridgeState implements FridgeCloseDoorReque
 		FridgeTimerTickedManager.instance().removeTimerTickedListener(this);
 	}
 
-	
 	@Override
 	public void closeDoorRequested(FridgeDoorCloseRequestEvent event) {
 		fridgeContext.changeCurrentState(FridgeClosedState.instance());
-		
 	}
 
 	@Override
 	public void timerTicked(FridgeTimerTickedEvent event) {
 		display.fridgeTemp(fridgeSettings.getCurrentTemp());
-		
 	}
 
 	@Override
@@ -71,9 +67,5 @@ public class FridgeOpenState extends FridgeState implements FridgeCloseDoorReque
 		display.fridgeTemp(fridgeSettings.getCurrentTemp());
 
 		FridgeTimer.instance().setTimeValue(fridgeSettings.getRateLossDoorOpen());
-		
-		
-		
 	}
-
 }

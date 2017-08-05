@@ -6,12 +6,12 @@ import settings.refrigerator.FreezerSettings;
 public abstract class FreezerState {
 
 	protected static FreezerContext freezerContext;
-	protected static RefrigeratorDisplay refrigeratorDisplay;
+	protected static RefrigeratorDisplay display;
 	protected static FreezerSettings freezerSettings;
 	
 	protected FreezerState(){
 		freezerContext = FreezerContext.instance();
-		refrigeratorDisplay = freezerContext.getDisplay();
+		display = freezerContext.getDisplay();
 		freezerSettings = FreezerSettings.instance();
 	}
 	

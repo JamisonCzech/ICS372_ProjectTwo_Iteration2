@@ -30,6 +30,7 @@ import settings.refrigerator.FreezerSettings;
 import settings.refrigerator.FridgeSettings;
 import settings.refrigerator.Settings;
 import timer.refrigerator.Clock;
+import timer.refrigerator.FreezerTimer;
 import timer.refrigerator.FridgeTimer;
 
 /**
@@ -253,8 +254,9 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener {
 	}
 
 	@Override
-	public void freezerTemp() {
-		frame.freezerTemp.setText("Freezer temp: " + FreezerSettings.instance().getCurrentTemp());
+	public void freezerTemp(int freezerTemp) {
+		//frame.freezerTemp.setText("Freezer temp: " + FreezerSettings.instance().getCurrentTemp());
+		frame.freezerTemp.setText("Freezer temp: " + freezerTemp);
 	}
 
 	@Override
@@ -388,6 +390,9 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener {
 				}
 			}
 		}
+		else {
+			System.exit(0);
+		}
 
 		int startingFridgeTemp = ((fridgeHigh + fridgeLow) / 2);
 		int startingFreezerTemp = ((freezerHigh + freezerLow) / 2);
@@ -407,10 +412,11 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener {
 
 		RefrigeratorDisplay display = new GUIDisplay();
 		//display.fridgeTemp();
-		display.freezerTemp();
+		//display.freezerTemp();
 //		Clock newClock = Clock.instance();
 //		newClock.run();
-		FridgeTimer time = FridgeTimer.instance();
+		FridgeTimer fridgeTime = FridgeTimer.instance();
+		FreezerTimer freezerTime = FreezerTimer.instance();
 	}// end main
 
 }

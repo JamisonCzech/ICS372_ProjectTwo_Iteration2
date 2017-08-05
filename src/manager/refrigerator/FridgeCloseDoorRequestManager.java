@@ -11,7 +11,6 @@ public class FridgeCloseDoorRequestManager {
 	private EventListenerList listenerList = new EventListenerList();
 	private static FridgeCloseDoorRequestManager instance;
 	
-	
 	/**
 	 * Private to make it a singleton
 	 */
@@ -49,7 +48,6 @@ public class FridgeCloseDoorRequestManager {
 		listenerList.remove(FridgeCloseDoorRequestListener.class, listener);
 	}
 	
-	
 	/**
 	 * Handles the request to close doors.
 	 * 
@@ -63,7 +61,4 @@ public class FridgeCloseDoorRequestManager {
 			((FridgeCloseDoorRequestListener) listeners[index]).closeDoorRequested(event);
 		}
 	}
-
-	
-
 }

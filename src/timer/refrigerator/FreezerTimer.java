@@ -49,15 +49,15 @@ public class FreezerTimer implements Observer {
 //	public void addTimeValue(int value) {
 //		timeValue += value;
 //	}
-//
-//	/**
-//	 * Get the remaining time
-//	 * 
-//	 * @return
-//	 */
-//	public int getTimeValue() {
-//		return timeValue;
-//	}
+
+	/**
+	 * Get the remaining time
+	 * 
+	 * @return
+	 */
+	public int getTimeValue() {
+		return timeValue;
+	}
 
 	/**
 	 * Get the clock tick and process it
@@ -65,11 +65,11 @@ public class FreezerTimer implements Observer {
 	@Override
 	public void update(Observable clock, Object value) {
 		if (--timeValue == 0) {
-			FridgeTimerRanOutManager.instance().processEvent(
-					new FridgeTimerRanOutEvent(instance));
+			FreezerTimerRanOutManager.instance().processEvent(
+					new FreezerTimerRanOutEvent(instance));
 		} else {
-			FridgeTimerTickedManager.instance().processEvent(
-					new FridgeTimerTickedEvent(instance));
+			FreezerTimerTickedManager.instance().processEvent(
+					new FreezerTimerTickedEvent(instance));
 		}
 
 	}
