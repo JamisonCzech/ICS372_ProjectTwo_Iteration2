@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d9a1560-7c50-4b91-aa26-4165719b22da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/display/refrigerator/FileChooser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project2_Iteration2.ipr" afterPath="$PROJECT_DIR$/Project2_Iteration2.ipr" />
+    <list default="true" id="5d9a1560-7c50-4b91-aa26-4165719b22da" name="Default" comment="Separated some file chooser and initial values &#10;implantation out of GUIDisplay class.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project2_Iteration2.iws" afterPath="$PROJECT_DIR$/Project2_Iteration2.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/display/refrigerator/GUIDisplay.java" afterPath="$PROJECT_DIR$/src/display/refrigerator/GUIDisplay.java" />
     </list>
@@ -33,37 +31,37 @@
             <entry file="file://$PROJECT_DIR$/src/display/refrigerator/GUIDisplay.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="524">
-                  <caret line="320" column="1" lean-forward="false" selection-start-line="320" selection-start-column="1" selection-end-line="320" selection-end-column="1" />
+                  <caret line="306" column="1" lean-forward="false" selection-start-line="306" selection-start-column="1" selection-end-line="306" selection-end-column="1" />
                   <folding>
-                    <element signature="e#7757#7758#0" expanded="true" />
-                    <element signature="e#7817#7818#0" expanded="true" />
-                    <element signature="e#7870#7871#0" expanded="true" />
-                    <element signature="e#7932#7933#0" expanded="true" />
-                    <element signature="e#7986#7987#0" expanded="true" />
-                    <element signature="e#8049#8050#0" expanded="true" />
-                    <element signature="e#8103#8104#0" expanded="true" />
-                    <element signature="e#8167#8168#0" expanded="true" />
-                    <element signature="e#8222#8223#0" expanded="true" />
-                    <element signature="e#8287#8288#0" expanded="true" />
-                    <element signature="e#8336#8337#0" expanded="true" />
-                    <element signature="e#8397#8398#0" expanded="true" />
-                    <element signature="e#8443#8444#0" expanded="true" />
-                    <element signature="e#8501#8502#0" expanded="true" />
-                    <element signature="e#8551#8552#0" expanded="true" />
-                    <element signature="e#8614#8615#0" expanded="true" />
-                    <element signature="e#8661#8662#0" expanded="true" />
-                    <element signature="e#8721#8722#0" expanded="true" />
-                    <element signature="e#9236#9237#0" expanded="true" />
-                    <element signature="e#9306#9307#0" expanded="true" />
-                    <element signature="e#9359#9360#0" expanded="true" />
-                    <element signature="e#9431#9432#0" expanded="true" />
-                    <element signature="e#9483#9484#0" expanded="true" />
-                    <element signature="e#9553#9554#0" expanded="true" />
-                    <element signature="e#9603#9604#0" expanded="true" />
-                    <element signature="e#9671#9672#0" expanded="true" />
-                    <element signature="e#9719#9720#0" expanded="true" />
-                    <element signature="e#9765#9766#0" expanded="true" />
-                    <marker date="1501967738868" expanded="true" signature="10793:10906" ph="//..." />
+                    <element signature="e#7143#7144#0" expanded="true" />
+                    <element signature="e#7203#7204#0" expanded="true" />
+                    <element signature="e#7256#7257#0" expanded="true" />
+                    <element signature="e#7318#7319#0" expanded="true" />
+                    <element signature="e#7372#7373#0" expanded="true" />
+                    <element signature="e#7435#7436#0" expanded="true" />
+                    <element signature="e#7489#7490#0" expanded="true" />
+                    <element signature="e#7553#7554#0" expanded="true" />
+                    <element signature="e#7608#7609#0" expanded="true" />
+                    <element signature="e#7673#7674#0" expanded="true" />
+                    <element signature="e#7722#7723#0" expanded="true" />
+                    <element signature="e#7783#7784#0" expanded="true" />
+                    <element signature="e#7829#7830#0" expanded="true" />
+                    <element signature="e#7887#7888#0" expanded="true" />
+                    <element signature="e#7937#7938#0" expanded="true" />
+                    <element signature="e#8000#8001#0" expanded="true" />
+                    <element signature="e#8047#8048#0" expanded="true" />
+                    <element signature="e#8107#8108#0" expanded="true" />
+                    <element signature="e#8622#8623#0" expanded="true" />
+                    <element signature="e#8692#8693#0" expanded="true" />
+                    <element signature="e#8745#8746#0" expanded="true" />
+                    <element signature="e#8817#8818#0" expanded="true" />
+                    <element signature="e#8869#8870#0" expanded="true" />
+                    <element signature="e#8939#8940#0" expanded="true" />
+                    <element signature="e#8989#8990#0" expanded="true" />
+                    <element signature="e#9057#9058#0" expanded="true" />
+                    <element signature="e#9105#9106#0" expanded="true" />
+                    <element signature="e#9151#9152#0" expanded="true" />
+                    <marker date="1501968907533" expanded="true" signature="10179:10292" ph="//..." />
                   </folding>
                 </state>
               </provider>
@@ -72,7 +70,7 @@
           <file leaf-file-name="FileChooser.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/display/refrigerator/FileChooser.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="286">
+                <state relative-caret-position="85">
                   <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
                   <folding />
                 </state>
@@ -96,9 +94,38 @@
           <file leaf-file-name="GUIDisplay.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/display/refrigerator/GUIDisplay.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="293" column="31" lean-forward="false" selection-start-line="293" selection-start-column="31" selection-end-line="293" selection-end-column="31" />
-                  <folding />
+                <state relative-caret-position="-3949">
+                  <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+                  <folding>
+                    <element signature="e#7143#7144#0" expanded="true" />
+                    <element signature="e#7203#7204#0" expanded="true" />
+                    <element signature="e#7256#7257#0" expanded="true" />
+                    <element signature="e#7318#7319#0" expanded="true" />
+                    <element signature="e#7372#7373#0" expanded="true" />
+                    <element signature="e#7435#7436#0" expanded="true" />
+                    <element signature="e#7489#7490#0" expanded="true" />
+                    <element signature="e#7553#7554#0" expanded="true" />
+                    <element signature="e#7608#7609#0" expanded="true" />
+                    <element signature="e#7673#7674#0" expanded="true" />
+                    <element signature="e#7722#7723#0" expanded="true" />
+                    <element signature="e#7783#7784#0" expanded="true" />
+                    <element signature="e#7829#7830#0" expanded="true" />
+                    <element signature="e#7887#7888#0" expanded="true" />
+                    <element signature="e#7937#7938#0" expanded="true" />
+                    <element signature="e#8000#8001#0" expanded="true" />
+                    <element signature="e#8047#8048#0" expanded="true" />
+                    <element signature="e#8107#8108#0" expanded="true" />
+                    <element signature="e#8622#8623#0" expanded="true" />
+                    <element signature="e#8692#8693#0" expanded="true" />
+                    <element signature="e#8745#8746#0" expanded="true" />
+                    <element signature="e#8817#8818#0" expanded="true" />
+                    <element signature="e#8869#8870#0" expanded="true" />
+                    <element signature="e#8939#8940#0" expanded="true" />
+                    <element signature="e#8989#8990#0" expanded="true" />
+                    <element signature="e#9057#9058#0" expanded="true" />
+                    <element signature="e#9105#9106#0" expanded="true" />
+                    <element signature="e#9151#9152#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -128,8 +155,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/GUIDisplay.java" />
         <option value="$PROJECT_DIR$/src/display/refrigerator/FileIO.java" />
-        <option value="$PROJECT_DIR$/src/display/refrigerator/GUIDisplay.java" />
         <option value="$PROJECT_DIR$/src/display/refrigerator/FileChooser.java" />
+        <option value="$PROJECT_DIR$/src/display/refrigerator/GUIDisplay.java" />
       </list>
     </option>
   </component>
@@ -176,18 +203,6 @@
               <item name="Project2_Iteration2" type="b2602c69:ProjectViewProjectNode" />
               <item name="ICS372_ProjectTwo_Iteration2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project2_Iteration2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ICS372_ProjectTwo_Iteration2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="refrigerator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project2_Iteration2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ICS372_ProjectTwo_Iteration2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="refrigerator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -346,15 +361,24 @@
       <updated>1501619268571</updated>
       <workItem from="1501619269811" duration="509000" />
       <workItem from="1501868700804" duration="508000" />
-      <workItem from="1501961940463" duration="5580000" />
+      <workItem from="1501961940463" duration="6778000" />
     </task>
+    <task id="LOCAL-00001" summary="Separated some file chooser and initial values &#10;implantation out of GUIDisplay class.">
+      <created>1501967842798</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1501967842798</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6597000" />
+    <option name="totallyTimeSpent" value="7795000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -365,7 +389,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -392,6 +416,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Separated some file chooser and initial values &#10;implantation out of GUIDisplay class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Separated some file chooser and initial values &#10;implantation out of GUIDisplay class." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
@@ -412,35 +440,34 @@
         <state relative-caret-position="6392">
           <caret line="404" column="0" lean-forward="false" selection-start-line="404" selection-start-column="0" selection-end-line="404" selection-end-column="0" />
           <folding>
-            <element signature="e#7757#7758#0" expanded="true" />
-            <element signature="e#7817#7818#0" expanded="true" />
-            <element signature="e#7870#7871#0" expanded="true" />
-            <element signature="e#7932#7933#0" expanded="true" />
-            <element signature="e#7986#7987#0" expanded="true" />
-            <element signature="e#8049#8050#0" expanded="true" />
-            <element signature="e#8103#8104#0" expanded="true" />
-            <element signature="e#8167#8168#0" expanded="true" />
-            <element signature="e#8222#8223#0" expanded="true" />
-            <element signature="e#8287#8288#0" expanded="true" />
-            <element signature="e#8336#8337#0" expanded="true" />
-            <element signature="e#8397#8398#0" expanded="true" />
-            <element signature="e#8443#8444#0" expanded="true" />
-            <element signature="e#8501#8502#0" expanded="true" />
-            <element signature="e#8551#8552#0" expanded="true" />
-            <element signature="e#8614#8615#0" expanded="true" />
-            <element signature="e#8661#8662#0" expanded="true" />
-            <element signature="e#8721#8722#0" expanded="true" />
-            <element signature="e#9236#9237#0" expanded="true" />
-            <element signature="e#9306#9307#0" expanded="true" />
-            <element signature="e#9359#9360#0" expanded="true" />
-            <element signature="e#9431#9432#0" expanded="true" />
-            <element signature="e#9483#9484#0" expanded="true" />
-            <element signature="e#9553#9554#0" expanded="true" />
-            <element signature="e#9603#9604#0" expanded="true" />
-            <element signature="e#9671#9672#0" expanded="true" />
-            <element signature="e#9719#9720#0" expanded="true" />
-            <element signature="e#9765#9766#0" expanded="true" />
-            <marker date="1501967738868" expanded="true" signature="10793:10906" ph="//..." />
+            <element signature="e#7143#7144#0" expanded="true" />
+            <element signature="e#7203#7204#0" expanded="true" />
+            <element signature="e#7256#7257#0" expanded="true" />
+            <element signature="e#7318#7319#0" expanded="true" />
+            <element signature="e#7372#7373#0" expanded="true" />
+            <element signature="e#7435#7436#0" expanded="true" />
+            <element signature="e#7489#7490#0" expanded="true" />
+            <element signature="e#7553#7554#0" expanded="true" />
+            <element signature="e#7608#7609#0" expanded="true" />
+            <element signature="e#7673#7674#0" expanded="true" />
+            <element signature="e#7722#7723#0" expanded="true" />
+            <element signature="e#7783#7784#0" expanded="true" />
+            <element signature="e#7829#7830#0" expanded="true" />
+            <element signature="e#7887#7888#0" expanded="true" />
+            <element signature="e#7937#7938#0" expanded="true" />
+            <element signature="e#8000#8001#0" expanded="true" />
+            <element signature="e#8047#8048#0" expanded="true" />
+            <element signature="e#8107#8108#0" expanded="true" />
+            <element signature="e#8622#8623#0" expanded="true" />
+            <element signature="e#8692#8693#0" expanded="true" />
+            <element signature="e#8745#8746#0" expanded="true" />
+            <element signature="e#8817#8818#0" expanded="true" />
+            <element signature="e#8869#8870#0" expanded="true" />
+            <element signature="e#8939#8940#0" expanded="true" />
+            <element signature="e#8989#8990#0" expanded="true" />
+            <element signature="e#9057#9058#0" expanded="true" />
+            <element signature="e#9105#9106#0" expanded="true" />
+            <element signature="e#9151#9152#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -471,49 +498,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/display/refrigerator/GUIDisplay.java">
+    <entry file="file://$PROJECT_DIR$/src/display/refrigerator/FileChooser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="320" column="1" lean-forward="false" selection-start-line="320" selection-start-column="1" selection-end-line="320" selection-end-column="1" />
-          <folding>
-            <element signature="e#7757#7758#0" expanded="true" />
-            <element signature="e#7817#7818#0" expanded="true" />
-            <element signature="e#7870#7871#0" expanded="true" />
-            <element signature="e#7932#7933#0" expanded="true" />
-            <element signature="e#7986#7987#0" expanded="true" />
-            <element signature="e#8049#8050#0" expanded="true" />
-            <element signature="e#8103#8104#0" expanded="true" />
-            <element signature="e#8167#8168#0" expanded="true" />
-            <element signature="e#8222#8223#0" expanded="true" />
-            <element signature="e#8287#8288#0" expanded="true" />
-            <element signature="e#8336#8337#0" expanded="true" />
-            <element signature="e#8397#8398#0" expanded="true" />
-            <element signature="e#8443#8444#0" expanded="true" />
-            <element signature="e#8501#8502#0" expanded="true" />
-            <element signature="e#8551#8552#0" expanded="true" />
-            <element signature="e#8614#8615#0" expanded="true" />
-            <element signature="e#8661#8662#0" expanded="true" />
-            <element signature="e#8721#8722#0" expanded="true" />
-            <element signature="e#9236#9237#0" expanded="true" />
-            <element signature="e#9306#9307#0" expanded="true" />
-            <element signature="e#9359#9360#0" expanded="true" />
-            <element signature="e#9431#9432#0" expanded="true" />
-            <element signature="e#9483#9484#0" expanded="true" />
-            <element signature="e#9553#9554#0" expanded="true" />
-            <element signature="e#9603#9604#0" expanded="true" />
-            <element signature="e#9671#9672#0" expanded="true" />
-            <element signature="e#9719#9720#0" expanded="true" />
-            <element signature="e#9765#9766#0" expanded="true" />
-            <marker date="1501967738868" expanded="true" signature="10793:10906" ph="//..." />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/display/refrigerator/FileChooser.java">
+    <entry file="file://$PROJECT_DIR$/src/display/refrigerator/GUIDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="-3949">
+          <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+          <folding>
+            <element signature="e#7143#7144#0" expanded="true" />
+            <element signature="e#7203#7204#0" expanded="true" />
+            <element signature="e#7256#7257#0" expanded="true" />
+            <element signature="e#7318#7319#0" expanded="true" />
+            <element signature="e#7372#7373#0" expanded="true" />
+            <element signature="e#7435#7436#0" expanded="true" />
+            <element signature="e#7489#7490#0" expanded="true" />
+            <element signature="e#7553#7554#0" expanded="true" />
+            <element signature="e#7608#7609#0" expanded="true" />
+            <element signature="e#7673#7674#0" expanded="true" />
+            <element signature="e#7722#7723#0" expanded="true" />
+            <element signature="e#7783#7784#0" expanded="true" />
+            <element signature="e#7829#7830#0" expanded="true" />
+            <element signature="e#7887#7888#0" expanded="true" />
+            <element signature="e#7937#7938#0" expanded="true" />
+            <element signature="e#8000#8001#0" expanded="true" />
+            <element signature="e#8047#8048#0" expanded="true" />
+            <element signature="e#8107#8108#0" expanded="true" />
+            <element signature="e#8622#8623#0" expanded="true" />
+            <element signature="e#8692#8693#0" expanded="true" />
+            <element signature="e#8745#8746#0" expanded="true" />
+            <element signature="e#8817#8818#0" expanded="true" />
+            <element signature="e#8869#8870#0" expanded="true" />
+            <element signature="e#8939#8940#0" expanded="true" />
+            <element signature="e#8989#8990#0" expanded="true" />
+            <element signature="e#9057#9058#0" expanded="true" />
+            <element signature="e#9105#9106#0" expanded="true" />
+            <element signature="e#9151#9152#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

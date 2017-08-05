@@ -35,28 +35,10 @@ import static display.refrigerator.FileChooser.*;
 public class GUIDisplay extends RefrigeratorDisplay implements ActionListener {
 
     public static SimpleDisplay frame;
-    public static FridgeSettings fridgeSettings;
-    public static FreezerSettings freezerSettings;
-
-    private static int fridgeLow;
-    private static int fridgeHigh;
-    private static int freezerLow;
-    private static int freezerHigh;
-    private static int roomLow;
-    private static int roomHigh;
-    private static int fridgeRateLossDoorClosed;
-    private static int fridgeRateLossDoorOpen;
-    private static int freezerRateLossDoorClosed;
-    private static int freezerRateLossDoorOpen;
-    private static int fridgeCompressorStartDiff;
-    private static int freezerCompressorStartDiff;
-    private static int fridgeCoolRate;
-    private static int freezerCoolRate;
-
-    static FileChooser fileChooser;
 
     /**
-     * Do the usual layout of the frame
+     * Do the usual layout of the frame in
+     * the center of the screen
      */
     private GUIDisplay() {
         frame = new SimpleDisplay();
@@ -183,6 +165,10 @@ public class GUIDisplay extends RefrigeratorDisplay implements ActionListener {
         }
     }
 
+    /**
+     *
+     * @return return the parsed fridge temp
+     */
     @Override
     public Integer getFridgeTemp() {
         int fridgeTemperature = 0;
