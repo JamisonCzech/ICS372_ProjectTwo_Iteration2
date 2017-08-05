@@ -14,9 +14,10 @@ public abstract class Settings {
 	
 	protected int desiredRoomTemp;
 	protected int desiredRefrigeratorTemp;
+	protected int currentTemperature;
 	
 	public void setInstance(int lowTemp, int highTemp, int roomLow, int roomHigh, 
-			int rateLossDoorClosed, int rateLossDoorOpen, int compressorStartDiff, int coolRate) {
+			int rateLossDoorClosed, int rateLossDoorOpen, int compressorStartDiff, int coolRate, int currentTemperature) {
 		if (!setParameters) {
 			
 			this.lowTemp = lowTemp;
@@ -27,6 +28,7 @@ public abstract class Settings {
 			this.rateLossDoorOpen = rateLossDoorOpen;
 			this.compressorStartDiff = compressorStartDiff;
 			this.coolRate = coolRate;
+			this.currentTemperature = currentTemperature;
 			setParameters = true;
 		}
 		
@@ -39,6 +41,8 @@ public abstract class Settings {
 	public abstract void setDesiredRoomTemp(int desiredRoomTemp);
 	
 	public abstract void setDesiredRefrigeratorTemp(int desiredRefrigeratorTemp);
+	
+	public abstract void setCurrentTemp(int currentTemperature);
 	
 	public int getDesiredRefrigeratorTemp() {
 		return desiredRefrigeratorTemp;
@@ -68,6 +72,11 @@ public abstract class Settings {
 	public int getCoolRate() {
 		return coolRate;
 	}
+	public int getCurrentTemp() {
+		return currentTemperature;
+	}
+
+	
 	
 	
 

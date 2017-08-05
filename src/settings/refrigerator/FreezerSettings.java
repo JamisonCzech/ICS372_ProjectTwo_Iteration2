@@ -26,4 +26,9 @@ public class FreezerSettings extends Settings {
 		this.desiredRefrigeratorTemp = desiredRefrigeratorTemp;
 		
 	}
+	
+	@Override
+	public void setCurrentTemp(int currentTemperature) {
+		this.currentTemperature = currentTemperature;
+	}
 }

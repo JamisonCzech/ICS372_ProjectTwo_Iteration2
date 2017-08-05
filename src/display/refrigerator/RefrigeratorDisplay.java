@@ -1,6 +1,8 @@
 package display.refrigerator;
 import java.util.Observable;
 
+import javax.swing.JTextField;
+
 import context.refrigerator.FreezerContext;
 import context.refrigerator.FridgeContext;
 
@@ -60,6 +62,12 @@ public abstract class RefrigeratorDisplay extends Observable{
 	public abstract void fridgeDoorOpen();
 	
 	public abstract void freezerDoorOpen();
+	
+	public abstract void clearWarning();
+	
+	public abstract void setWarning(String warningMessage);
+	
+
 	
 	
 }

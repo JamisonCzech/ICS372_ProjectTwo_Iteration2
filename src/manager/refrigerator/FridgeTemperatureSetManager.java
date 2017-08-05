@@ -13,16 +13,16 @@ import settings.refrigerator.FridgeSettings;
 public class FridgeTemperatureSetManager {
 	
 
-	private EventListenerList listenerList = new EventListenerList();
+	//private EventListenerList listenerList = new EventListenerList();
 	private static FridgeTemperatureSetManager instance;
 	private static RefrigeratorDisplay display;
 	
-	private static FridgeSettings settings;
+	private static FridgeSettings fridgeSettings;
 	/**
 	 * Private to make it a singleton
 	 */
 	private  FridgeTemperatureSetManager() {
-		settings = FridgeSettings.instance();
+		fridgeSettings = FridgeSettings.instance();
 	}
 	
 	/**
@@ -37,39 +37,46 @@ public class FridgeTemperatureSetManager {
 		return instance;
 	}
 	
-	/**
-	 * Adds a listener
-	 * 
-	 * @param listener
-	 *            an object that wants to listen to the event
-	 */
-	public void addFridgeTemperatureSetListener(FridgeTemperatureSetListener listener) {
-		listenerList.add(FridgeTemperatureSetListener.class, listener);
-	}
-
-
-	/**
-	 * remove a listener
-	 * 
-	 * @param listener
-	 *            an object that wants to listen to the event
-	 */
-	public void removeFridgeTemperatureSetListener(FridgeTemperatureSetListener listener) {
-		listenerList.remove(FridgeTemperatureSetListener.class, listener);
-	}
+//	/**
+//	 * Adds a listener
+//	 * 
+//	 * @param listener
+//	 *            an object that wants to listen to the event
+//	 */
+//	public void addFridgeTemperatureSetListener(FridgeTemperatureSetListener listener) {
+//		listenerList.add(FridgeTemperatureSetListener.class, listener);
+//	}
+//
+//
+//	/**
+//	 * remove a listener
+//	 * 
+//	 * @param listener
+//	 *            an object that wants to listen to the event
+//	 */
+//	public void removeFridgeTemperatureSetListener(FridgeTemperatureSetListener listener) {
+//		listenerList.remove(FridgeTemperatureSetListener.class, listener);
+//	}
 	
 	
 	public void processEvent(FridgeTemperatureSetEvent event) {
-		//settings.setDesiredRefrigeratorTemp(display.getFreezerTemp());
-	//EventListener[] listeners = listenerList
-				//.getListeners(FreezerTemperatureSetListener.class);
-		//for (int index = 0; index < listeners.length; index++) {
-			//((FreezerTemperatureSetListener) listeners[index]).freezerTemperatureSet(event);
-			
-			
-	//}
+		
+		 fridgeSettings = FridgeSettings.instance();
+		 display = RefrigeratorDisplay.instance();
 
-
+		try {
+			int desiredFridgeTemp = display.getFridgeTemp();
+			int fridgeHighTemp = fridgeSettings.getHighTemp();
+			int fridgeLowTemp = fridgeSettings.getLowTemp();
+			display.clearWarning();
+			if ((fridgeHighTemp >= desiredFridgeTemp) && (fridgeLowTemp <= desiredFridgeTemp)) {
+				fridgeSettings.setDesiredRefrigeratorTemp(desiredFridgeTemp);
+			} else {
+				display.setWarning("Temperature not changed. Fridge temperature must be between " + fridgeLowTemp + " and " + fridgeHighTemp);
+			}
+		} catch (NullPointerException npe) {
+			display.clearWarning();
+			display.setWarning("Invalid fridge temperature value");
+		}
 	}	
-
 }

@@ -17,5 +17,4 @@ public class SetFreezerButton extends GUIButton {
 		FreezerTemperatureSetManager.instance()
 		.processEvent(new FreezerTemperatureSetEvent(source));
 	}
-
 }
