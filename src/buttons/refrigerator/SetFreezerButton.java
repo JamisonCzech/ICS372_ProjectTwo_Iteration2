@@ -5,6 +5,7 @@ import event.refrigerator.RoomTemperatureSetEvent;
 import manager.refrigerator.FreezerTemperatureSetManager;
 import manager.refrigerator.RoomTemperatureSetManager;
 
+//Set freezer temperature button
 public class SetFreezerButton extends GUIButton {
 
 	public SetFreezerButton(String string) {

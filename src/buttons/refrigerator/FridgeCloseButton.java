@@ -3,6 +3,7 @@ import display.refrigerator.RefrigeratorDisplay;
 import event.refrigerator.FridgeDoorCloseRequestEvent;
 import manager.refrigerator.FridgeCloseDoorRequestManager;
 
+//Fridge Close Button
 public class FridgeCloseButton extends GUIButton {
 
 	public FridgeCloseButton(String string) {
