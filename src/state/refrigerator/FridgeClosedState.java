@@ -11,8 +11,10 @@ import timer.refrigerator.FridgeTimerTickedEvent;
 import timer.refrigerator.FridgeTimerTickedListener;
 import timer.refrigerator.FridgeTimerTickedManager;
 
-//The FridgeClosedState class handles the actual mechanism of the fridge when the fridge door is closed. This class is responsible for maintaining the temperature 
-//of the fridge when the doors are closed and handles switches between Cooling and Idle state of the fridge.
+/**
+ * The FridgeClosedState class handles the actual mechanism of the fridge when the fridge door is closed. This class is responsible for maintaining the temperature
+ *of the fridge when the doors are closed and handles switches between Cooling and Idle state of the fridge.
+ */
 public class FridgeClosedState extends FridgeState
 		implements FridgeOpenDoorRequestListener, FridgeTimerRanOutListener, FridgeTimerTickedListener {
 
@@ -31,6 +33,10 @@ public class FridgeClosedState extends FridgeState
 		return instance;
 	}
 
+
+	/**
+	 * Adds Request Listeners
+	 */
 	@Override
 	public void run() {
 		FridgeOpenDoorRequestManager.instance().addFridgeOpenDoorRequestListener(instance);
@@ -44,6 +50,9 @@ public class FridgeClosedState extends FridgeState
 		display.fridgeIdle();
 	}
 
+	/**
+	 * Removes Request Listeners
+	 */
 	@Override
 	public void leave() {
 		FridgeOpenDoorRequestManager.instance().removeFridgeOpenDoorRequestListener(this);
@@ -56,10 +65,14 @@ public class FridgeClosedState extends FridgeState
 		fridgeContext.changeCurrentState(FridgeOpenState.instance());
 	}
 
+	/**
+	 * Immediately go to cooling state if desired temp is adjusted below
+	 * current temp
+	 * @param event FridgeTimerTickedEvent event
+	 */
 	@Override
 	public void timerTicked(FridgeTimerTickedEvent event) {
-		// Immediately go to cooling state if desired temp is adjusted below
-		// current temp
+
 		if (fridgeSettings.getCurrentTemp() >= (fridgeSettings.getDesiredRefrigeratorTemp()
 				+ fridgeSettings.getCompressorStartDiff())) {
 			fridgeContext.changeCurrentState(FridgeCoolingState.instance());

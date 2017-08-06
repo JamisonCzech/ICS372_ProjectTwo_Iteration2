@@ -9,6 +9,7 @@ import java.util.EventListener;
  *
  */
 public interface FreezerTimerRanOutListener extends EventListener {
+
 	/**
 	 * This method should implement the functionality to handle the situation of
 	 * the timer running out.
