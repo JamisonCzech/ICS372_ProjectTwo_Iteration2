@@ -6,6 +6,7 @@ import javax.swing.event.EventListenerList;
 import event.refrigerator.FreezerDoorOpenRequestEvent;
 import listener.refrigerator.FreezerOpenDoorRequestListener;
 
+//This class handles the freezer open door event and request.
 public class FreezerOpenDoorRequestManager {
 	private EventListenerList listenerList = new EventListenerList();
 	private static FreezerOpenDoorRequestManager instance;

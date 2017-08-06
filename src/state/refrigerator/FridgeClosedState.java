@@ -11,6 +11,8 @@ import timer.refrigerator.FridgeTimerTickedEvent;
 import timer.refrigerator.FridgeTimerTickedListener;
 import timer.refrigerator.FridgeTimerTickedManager;
 
+//The FridgeClosedState class handles the actual mechanism of the fridge when the fridge door is closed. This class is responsible for maintaining the temperature 
+//of the fridge when the doors are closed and handles switches between Cooling and Idle state of the fridge.
 public class FridgeClosedState extends FridgeState
 		implements FridgeOpenDoorRequestListener, FridgeTimerRanOutListener, FridgeTimerTickedListener {
 

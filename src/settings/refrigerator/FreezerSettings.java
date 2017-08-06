@@ -1,5 +1,7 @@
 package settings.refrigerator;
 
+// This class handles the settings of temperature for the room, freezer and current temperature of the freezer.
+//This class is derived from the Settings base class. 
 public class FreezerSettings extends Settings {
 
 	private static FreezerSettings instance;

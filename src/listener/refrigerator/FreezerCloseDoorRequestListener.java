@@ -3,6 +3,7 @@ import java.util.EventListener;
 
 import event.refrigerator.FreezerDoorCloseRequestEvent;
 
+// This is an interface class for freezer close door event listener and is derived from the Event Listener class.
 public interface FreezerCloseDoorRequestListener extends EventListener {
 
 	/**

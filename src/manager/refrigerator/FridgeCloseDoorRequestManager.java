@@ -6,6 +6,7 @@ import javax.swing.event.EventListenerList;
 import event.refrigerator.FridgeDoorCloseRequestEvent;
 import listener.refrigerator.FridgeCloseDoorRequestListener;
 
+//This class handles the fridge close door event and request.
 public class FridgeCloseDoorRequestManager {
 
 	private EventListenerList listenerList = new EventListenerList();

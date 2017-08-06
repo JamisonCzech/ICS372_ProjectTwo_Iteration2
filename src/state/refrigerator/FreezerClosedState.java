@@ -11,6 +11,9 @@ import timer.refrigerator.FreezerTimerTickedEvent;
 import timer.refrigerator.FreezerTimerTickedListener;
 import timer.refrigerator.FreezerTimerTickedManager;
 
+
+// The FreezerClosedState class handles the actual mechanism of the freezer when the freezer door is closed. This class is responsible for maintaining the temperature 
+// of the freezer when the doors are closed and handles switches between Cooling and Idle state of the freezer.
 public class FreezerClosedState extends FreezerState
 		implements FreezerOpenDoorRequestListener, FreezerTimerRanOutListener, FreezerTimerTickedListener {
 

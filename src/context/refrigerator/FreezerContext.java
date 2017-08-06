@@ -3,6 +3,7 @@ import display.refrigerator.RefrigeratorDisplay;
 import state.refrigerator.FreezerClosedState;
 import state.refrigerator.FreezerState;
 
+// This class initializes and handles the state of the freezer
 public class FreezerContext {
 	private static RefrigeratorDisplay display;
 	private FreezerState currentState;

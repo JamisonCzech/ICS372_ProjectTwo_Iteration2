@@ -1,5 +1,7 @@
 package settings.refrigerator;
 
+//This class handles the settings of temperature for the room, fridge and current temperature of the fridge.
+//This class is derived from the Settings base class. 
 public class FridgeSettings extends Settings{
 
 	private static FridgeSettings instance;

@@ -11,6 +11,8 @@ import timer.refrigerator.FridgeTimerTickedEvent;
 import timer.refrigerator.FridgeTimerTickedListener;
 import timer.refrigerator.FridgeTimerTickedManager;
 
+//The FridgeOpenState class handles the actual mechanism of the fridge when the fridge door is opened. This class is responsible for maintaining the temperature 
+//of the fridge when the doors are opened and handles switches between idle state of the fridge and lights.
 public class FridgeOpenState extends FridgeState
 		implements FridgeCloseDoorRequestListener, FridgeTimerRanOutListener, FridgeTimerTickedListener {
 

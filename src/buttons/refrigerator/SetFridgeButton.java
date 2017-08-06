@@ -5,7 +5,7 @@ import event.refrigerator.FridgeTemperatureSetEvent;
 import manager.refrigerator.FreezerTemperatureSetManager;
 import manager.refrigerator.FridgeTemperatureSetManager;
 
-//Set fridge temperature button
+//this class derives from the GUI button super class and handles set fridge temperature button events.
 public class SetFridgeButton extends GUIButton {
 
 	public SetFridgeButton(String string) {

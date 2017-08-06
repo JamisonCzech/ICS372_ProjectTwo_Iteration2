@@ -3,6 +3,7 @@ import context.refrigerator.FreezerContext;
 import display.refrigerator.RefrigeratorDisplay;
 import settings.refrigerator.FreezerSettings;
 
+//This is an abstract class that initialize different states of the freezer.
 public abstract class FreezerState {
 
 	protected static FreezerContext freezerContext;

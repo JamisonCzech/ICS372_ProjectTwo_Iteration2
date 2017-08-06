@@ -11,6 +11,8 @@ import timer.refrigerator.FreezerTimerTickedEvent;
 import timer.refrigerator.FreezerTimerTickedListener;
 import timer.refrigerator.FreezerTimerTickedManager;
 
+//The FreezerOpenState class handles the actual mechanism of the freezer when the freezer door is opened. This class is responsible for maintaining the temperature 
+//of the freezer when the doors are opened and handles switches between idle state of the freezer and lights.
 public class FreezerOpenState extends FreezerState
 		implements FreezerCloseDoorRequestListener, FreezerTimerRanOutListener, FreezerTimerTickedListener {
 

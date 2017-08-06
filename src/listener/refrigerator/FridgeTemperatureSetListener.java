@@ -5,6 +5,7 @@ import java.util.EventListener;
 import event.refrigerator.FreezerTemperatureSetEvent;
 import event.refrigerator.FridgeTemperatureSetEvent;
 
+//This is an interface class for set fridge temperature event listener and is derived from the Event Listener class.
 public interface FridgeTemperatureSetListener extends EventListener {
 	/**
 	 * Processes room temperature set button

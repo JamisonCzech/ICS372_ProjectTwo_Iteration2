@@ -1,6 +1,7 @@
 package event.refrigerator;
 import java.util.EventObject;
 
+// This class derives from EventObject super class and constructs the Freezer door close request event.
 public class FreezerDoorCloseRequestEvent extends EventObject{
 	/**
 	 * Constructor simply calls the super class's constructor
