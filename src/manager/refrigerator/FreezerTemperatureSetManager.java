@@ -57,8 +57,16 @@ public class FreezerTemperatureSetManager {
 //	public void removeFreezerTemperatureSetListener(FreezerTemperatureSetListener listener) {
 //		listenerList.remove(FreezerTemperatureSetListener.class, listener);
 //	}
-	
-	
+
+
+	/**
+	 *
+	 * @param event FreezerTemperatureSetEvent event
+	 *              error handling for values not entered
+	 *              within the parameters of the min and max temps
+	 *              for the freezer.
+	 *
+	 */
 	public void processEvent(FreezerTemperatureSetEvent event) {
 		freezerSettings = FreezerSettings.instance();
 		display = RefrigeratorDisplay.instance();

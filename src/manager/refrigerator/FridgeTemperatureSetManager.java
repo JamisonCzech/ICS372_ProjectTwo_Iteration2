@@ -56,8 +56,16 @@ public class FridgeTemperatureSetManager {
 //	public void removeFridgeTemperatureSetListener(FridgeTemperatureSetListener listener) {
 //		listenerList.remove(FridgeTemperatureSetListener.class, listener);
 //	}
-	
-	
+
+
+	/**
+	 *
+	 * @param event FridgeTemperatureSetEvent event
+	 *              error handling for values not entered
+	 *              within the parameters of the min and max temps
+	 *              for the Fridge.
+	 *
+	 */
 	public void processEvent(FridgeTemperatureSetEvent event) {
 		
 		 fridgeSettings = FridgeSettings.instance();

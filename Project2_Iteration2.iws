@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d9a1560-7c50-4b91-aa26-4165719b22da" name="Default" comment="Separated some file chooser and initial values &#10;implantation out of GUIDisplay class.">
+    <list default="true" id="5d9a1560-7c50-4b91-aa26-4165719b22da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project2_Iteration2.iws" afterPath="$PROJECT_DIR$/Project2_Iteration2.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/buttons/refrigerator/FreezerCloseButton.java" afterPath="$PROJECT_DIR$/src/buttons/refrigerator/FreezerCloseButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/buttons/refrigerator/FreezerOpenButton.java" afterPath="$PROJECT_DIR$/src/buttons/refrigerator/FreezerOpenButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/buttons/refrigerator/FridgeCloseButton.java" afterPath="$PROJECT_DIR$/src/buttons/refrigerator/FridgeCloseButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/buttons/refrigerator/FridgeOpenButton.java" afterPath="$PROJECT_DIR$/src/buttons/refrigerator/FridgeOpenButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/buttons/refrigerator/GUIButton.java" afterPath="$PROJECT_DIR$/src/buttons/refrigerator/GUIButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/buttons/refrigerator/SetFridgeButton.java" afterPath="$PROJECT_DIR$/src/buttons/refrigerator/SetFridgeButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/buttons/refrigerator/SetRoomButton.java" afterPath="$PROJECT_DIR$/src/buttons/refrigerator/SetRoomButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/display/refrigerator/GUIDisplay.java" afterPath="$PROJECT_DIR$/src/display/refrigerator/GUIDisplay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/display/refrigerator/RefrigeratorDisplay.java" afterPath="$PROJECT_DIR$/src/display/refrigerator/RefrigeratorDisplay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/event/refrigerator/FreezerDoorOpenRequestEvent.java" afterPath="$PROJECT_DIR$/src/event/refrigerator/FreezerDoorOpenRequestEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/event/refrigerator/FreezerTemperatureSetEvent.java" afterPath="$PROJECT_DIR$/src/event/refrigerator/FreezerTemperatureSetEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/event/refrigerator/FridgeTemperatureSetEvent.java" afterPath="$PROJECT_DIR$/src/event/refrigerator/FridgeTemperatureSetEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/listener/refrigerator/RoomTemperatureSetListener.java" afterPath="$PROJECT_DIR$/src/listener/refrigerator/RoomTemperatureSetListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manager/refrigerator/FreezerCloseDoorRequestManager.java" afterPath="$PROJECT_DIR$/src/manager/refrigerator/FreezerCloseDoorRequestManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manager/refrigerator/FreezerOpenDoorRequestManager.java" afterPath="$PROJECT_DIR$/src/manager/refrigerator/FreezerOpenDoorRequestManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manager/refrigerator/FreezerTemperatureSetManager.java" afterPath="$PROJECT_DIR$/src/manager/refrigerator/FreezerTemperatureSetManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manager/refrigerator/FridgeCloseDoorRequestManager.java" afterPath="$PROJECT_DIR$/src/manager/refrigerator/FridgeCloseDoorRequestManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manager/refrigerator/FridgeOpenDoorRequestManager.java" afterPath="$PROJECT_DIR$/src/manager/refrigerator/FridgeOpenDoorRequestManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manager/refrigerator/FridgeTemperatureSetManager.java" afterPath="$PROJECT_DIR$/src/manager/refrigerator/FridgeTemperatureSetManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manager/refrigerator/RoomTemperatureSetManager.java" afterPath="$PROJECT_DIR$/src/manager/refrigerator/RoomTemperatureSetManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/settings/refrigerator/FreezerSettings.java" afterPath="$PROJECT_DIR$/src/settings/refrigerator/FreezerSettings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/settings/refrigerator/FridgeSettings.java" afterPath="$PROJECT_DIR$/src/settings/refrigerator/FridgeSettings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/settings/refrigerator/Settings.java" afterPath="$PROJECT_DIR$/src/settings/refrigerator/Settings.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,131 +22,147 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="Settings.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/settings/refrigerator/Settings.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="102">
+                    <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+                    <folding>
+                      <element signature="e#2227#2228#0" expanded="true" />
+                      <element signature="e#2256#2257#0" expanded="true" />
+                      <element signature="e#2300#2301#0" expanded="true" />
+                      <element signature="e#2337#2338#0" expanded="true" />
+                      <element signature="e#2365#2366#0" expanded="true" />
+                      <element signature="e#2386#2387#0" expanded="true" />
+                      <element signature="e#2415#2416#0" expanded="true" />
+                      <element signature="e#2437#2438#0" expanded="true" />
+                      <element signature="e#2465#2466#0" expanded="true" />
+                      <element signature="e#2486#2487#0" expanded="true" />
+                      <element signature="e#2515#2516#0" expanded="true" />
+                      <element signature="e#2537#2538#0" expanded="true" />
+                      <element signature="e#2576#2577#0" expanded="true" />
+                      <element signature="e#2608#2609#0" expanded="true" />
+                      <element signature="e#2645#2646#0" expanded="true" />
+                      <element signature="e#2675#2676#0" expanded="true" />
+                      <element signature="e#2715#2716#0" expanded="true" />
+                      <element signature="e#2748#2749#0" expanded="true" />
+                      <element signature="e#2777#2778#0" expanded="true" />
+                      <element signature="e#2799#2800#0" expanded="true" />
+                      <element signature="e#2831#2832#0" expanded="true" />
+                      <element signature="e#2863#2864#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50431037">
+    <splitter split-orientation="horizontal" split-proportion="0.5236876">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="FreezerCloseDoorRequestManager.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/manager/refrigerator/FreezerCloseDoorRequestManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FridgeTemperatureSetManager.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/manager/refrigerator/FridgeTemperatureSetManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="519">
+                  <caret line="67" column="7" lean-forward="true" selection-start-line="60" selection-start-column="4" selection-end-line="67" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RoomTemperatureSetManager.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/manager/refrigerator/RoomTemperatureSetManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="476">
+                  <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FreezerSettings.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/settings/refrigerator/FreezerSettings.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="641">
+                  <caret line="46" column="7" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="46" selection-end-column="7" />
+                  <folding>
+                    <element signature="e#369#370#0" expanded="true" />
+                    <element signature="e#391#392#0" expanded="true" />
+                    <element signature="e#1195#1196#0" expanded="true" />
+                    <element signature="e#1246#1247#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FreezerOpenDoorRequestManager.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/manager/refrigerator/FreezerOpenDoorRequestManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-195">
+                  <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FreezerTemperatureSetManager.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/manager/refrigerator/FreezerTemperatureSetManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="403">
+                  <caret line="68" column="7" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="68" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FridgeCloseDoorRequestManager.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/manager/refrigerator/FridgeCloseDoorRequestManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="740">
+                  <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FridgeOpenDoorRequestManager.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/manager/refrigerator/FridgeOpenDoorRequestManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="723">
+                  <caret line="63" column="5" lean-forward="false" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="FreezerTemperatureSetEvent.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/event/refrigerator/FreezerTemperatureSetEvent.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+                <state relative-caret-position="153">
+                  <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
                   <folding>
                     <element signature="e#667#668#0" expanded="true" />
-                    <marker date="1501984731659" expanded="true" signature="432:616" ph="/**...*/" />
-                    <marker date="1501984731659" expanded="true" signature="685:688" ph=" }" />
+                    <element signature="e#687#688#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FridgeDoorCloseRequestEvent.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/event/refrigerator/FridgeDoorCloseRequestEvent.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#407#408#0" expanded="true" />
-                    <marker date="1501984730689" expanded="true" signature="225:355" ph="/**...*/" />
-                    <marker date="1501984730689" expanded="true" signature="425:428" ph=" }" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FridgeDoorOpenRequestEvent.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/event/refrigerator/FridgeDoorOpenRequestEvent.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#404#405#0" expanded="true" />
-                    <marker date="1501984730689" expanded="true" signature="223:353" ph="/**...*/" />
-                    <marker date="1501984730689" expanded="true" signature="422:425" ph=" }" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FridgeTemperatureSetEvent.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/event/refrigerator/FridgeTemperatureSetEvent.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#605#606#0" expanded="true" />
-                    <marker date="1501984731659" expanded="true" signature="371:555" ph="/**...*/" />
-                    <marker date="1501984731659" expanded="true" signature="623:626" ph=" }" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RoomTemperatureSetEvent.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/event/refrigerator/RoomTemperatureSetEvent.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-                  <folding>
-                    <marker date="1501984745581" expanded="true" signature="412:417" ph=" { " />
-                    <marker date="1501984745581" expanded="true" signature="431:434" ph=" }" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FreezerCloseDoorRequestListener.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/listener/refrigerator/FreezerCloseDoorRequestListener.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-                  <folding>
-                    <marker date="1501984730705" expanded="true" signature="310:426" ph="/**...*/" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FreezerOpenDoorRequestListener.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/listener/refrigerator/FreezerOpenDoorRequestListener.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-                  <folding>
-                    <marker date="1501984730705" expanded="true" signature="308:423" ph="/**...*/" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FreezerTemperatureSetListener.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/listener/refrigerator/FreezerTemperatureSetListener.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-                  <folding>
-                    <marker date="1501984730705" expanded="true" signature="364:488" ph="/**...*/" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FridgeCloseDoorRequestListener.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/listener/refrigerator/FridgeCloseDoorRequestListener.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="EventObject.java" pinned="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/EventObject.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="52" column="7" lean-forward="false" selection-start-line="47" selection-start-column="3" selection-end-line="52" selection-end-column="7" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -157,152 +170,27 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="GUIDisplay.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/display/refrigerator/GUIDisplay.java">
+        <leaf>
+          <file leaf-file-name="FreezerCloseDoorRequestManager.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/manager/refrigerator/FreezerCloseDoorRequestManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="689">
-                  <caret line="338" column="0" lean-forward="false" selection-start-line="338" selection-start-column="0" selection-end-line="338" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#7875#7876#0" expanded="true" />
-                    <element signature="e#7935#7936#0" expanded="true" />
-                    <element signature="e#7988#7989#0" expanded="true" />
-                    <element signature="e#8050#8051#0" expanded="true" />
-                    <element signature="e#8104#8105#0" expanded="true" />
-                    <element signature="e#8167#8168#0" expanded="true" />
-                    <element signature="e#8221#8222#0" expanded="true" />
-                    <element signature="e#8285#8286#0" expanded="true" />
-                    <element signature="e#8340#8341#0" expanded="true" />
-                    <element signature="e#8405#8406#0" expanded="true" />
-                    <element signature="e#8454#8455#0" expanded="true" />
-                    <element signature="e#8515#8516#0" expanded="true" />
-                    <element signature="e#8561#8562#0" expanded="true" />
-                    <element signature="e#8619#8620#0" expanded="true" />
-                    <element signature="e#8669#8670#0" expanded="true" />
-                    <element signature="e#8732#8733#0" expanded="true" />
-                    <element signature="e#8779#8780#0" expanded="true" />
-                    <element signature="e#8839#8840#0" expanded="true" />
-                    <element signature="e#9354#9355#0" expanded="true" />
-                    <element signature="e#9424#9425#0" expanded="true" />
-                    <element signature="e#9477#9478#0" expanded="true" />
-                    <element signature="e#9549#9550#0" expanded="true" />
-                    <element signature="e#9601#9602#0" expanded="true" />
-                    <element signature="e#9671#9672#0" expanded="true" />
-                    <element signature="e#9721#9722#0" expanded="true" />
-                    <element signature="e#9789#9790#0" expanded="true" />
-                    <element signature="e#9837#9838#0" expanded="true" />
-                    <element signature="e#9883#9884#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ActionEvent.java" pinned="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/event/ActionEvent.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="107">
-                  <caret line="33" column="52" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="52" />
+                <state relative-caret-position="-110">
+                  <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SetFreezerButton.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/buttons/refrigerator/SetFreezerButton.java">
+          <file leaf-file-name="FridgeSettings.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/settings/refrigerator/FridgeSettings.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+                <state relative-caret-position="692">
+                  <caret line="50" column="7" lean-forward="false" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
                   <folding>
-                    <marker date="1501984746445" expanded="true" signature="680:681" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SetFridgeButton.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/buttons/refrigerator/SetFridgeButton.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="19" column="7" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="19" selection-end-column="7" />
-                  <folding>
-                    <marker date="1501984731674" expanded="true" signature="494:518" ph="{...}" />
-                    <marker date="1501984731674" expanded="true" signature="521:623" ph="/**...*/" />
-                    <marker date="1501984731674" expanded="true" signature="683:785" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SetRoomButton.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/buttons/refrigerator/SetRoomButton.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-                  <folding>
-                    <marker date="1501984731674" expanded="true" signature="417:480" ph="{...}" />
-                    <marker date="1501984731674" expanded="true" signature="483:583" ph="/**...*/" />
-                    <marker date="1501984731674" expanded="true" signature="643:741" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FridgeOpenDoorRequestListener.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/listener/refrigerator/FridgeOpenDoorRequestListener.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-                  <folding>
-                    <marker date="1501984730705" expanded="true" signature="301:416" ph="/**...*/" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FridgeTemperatureSetListener.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/listener/refrigerator/FridgeTemperatureSetListener.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-                  <folding>
-                    <marker date="1501984730705" expanded="true" signature="361:485" ph="/**...*/" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RoomTemperatureSetListener.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/listener/refrigerator/RoomTemperatureSetListener.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FridgeCloseButton.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/buttons/refrigerator/FridgeCloseButton.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-                  <folding>
-                    <marker date="1501984731690" expanded="true" signature="380:404" ph="{...}" />
-                    <marker date="1501984731690" expanded="true" signature="407:544" ph="/**...*/" />
-                    <marker date="1501984731690" expanded="true" signature="604:710" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FridgeContext.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/context/refrigerator/FridgeContext.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="663">
-                  <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-                  <folding>
-                    <marker date="1501984744712" expanded="true" signature="1047:1052" ph=" { " />
-                    <marker date="1501984744712" expanded="true" signature="1067:1070" ph=" }" />
+                    <element signature="e#384#385#0" expanded="true" />
+                    <element signature="e#406#407#0" expanded="true" />
+                    <element signature="e#1248#1249#0" expanded="true" />
+                    <element signature="e#1299#1300#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -360,6 +248,16 @@
         <option value="$PROJECT_DIR$/src/listener/refrigerator/FridgeOpenDoorRequestListener.java" />
         <option value="$PROJECT_DIR$/src/listener/refrigerator/FridgeTemperatureSetListener.java" />
         <option value="$PROJECT_DIR$/src/listener/refrigerator/RoomTemperatureSetListener.java" />
+        <option value="$PROJECT_DIR$/src/manager/refrigerator/FridgeOpenDoorRequestManager.java" />
+        <option value="$PROJECT_DIR$/src/manager/refrigerator/FridgeCloseDoorRequestManager.java" />
+        <option value="$PROJECT_DIR$/src/manager/refrigerator/FreezerOpenDoorRequestManager.java" />
+        <option value="$PROJECT_DIR$/src/manager/refrigerator/FreezerCloseDoorRequestManager.java" />
+        <option value="$PROJECT_DIR$/src/manager/refrigerator/FreezerTemperatureSetManager.java" />
+        <option value="$PROJECT_DIR$/src/manager/refrigerator/FridgeTemperatureSetManager.java" />
+        <option value="$PROJECT_DIR$/src/manager/refrigerator/RoomTemperatureSetManager.java" />
+        <option value="$PROJECT_DIR$/src/settings/refrigerator/Settings.java" />
+        <option value="$PROJECT_DIR$/src/settings/refrigerator/FreezerSettings.java" />
+        <option value="$PROJECT_DIR$/src/settings/refrigerator/FridgeSettings.java" />
       </list>
     </option>
   </component>
@@ -766,7 +664,7 @@
       <workItem from="1501619269811" duration="509000" />
       <workItem from="1501868700804" duration="508000" />
       <workItem from="1501961940463" duration="6778000" />
-      <workItem from="1501979218192" duration="4365000" />
+      <workItem from="1501979218192" duration="6586000" />
     </task>
     <task id="LOCAL-00001" summary="Separated some file chooser and initial values &#10;implantation out of GUIDisplay class.">
       <created>1501967842798</created>
@@ -775,14 +673,22 @@
       <option name="project" value="LOCAL" />
       <updated>1501967842798</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Comments added...">
+      <created>1501984941665</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1501984941665</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12160000" />
+    <option name="totallyTimeSpent" value="14381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -797,7 +703,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1673774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -822,7 +728,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Separated some file chooser and initial values &#10;implantation out of GUIDisplay class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Separated some file chooser and initial values &#10;implantation out of GUIDisplay class." />
+    <MESSAGE value="Comments added..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Comments added..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -883,7 +790,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-          <folding />
+          <folding>
+            <element signature="e#2227#2228#0" expanded="true" />
+            <element signature="e#2256#2257#0" expanded="true" />
+            <element signature="e#2300#2301#0" expanded="true" />
+            <element signature="e#2337#2338#0" expanded="true" />
+            <element signature="e#2365#2366#0" expanded="true" />
+            <element signature="e#2386#2387#0" expanded="true" />
+            <element signature="e#2415#2416#0" expanded="true" />
+            <element signature="e#2437#2438#0" expanded="true" />
+            <element signature="e#2465#2466#0" expanded="true" />
+            <element signature="e#2486#2487#0" expanded="true" />
+            <element signature="e#2515#2516#0" expanded="true" />
+            <element signature="e#2537#2538#0" expanded="true" />
+            <element signature="e#2576#2577#0" expanded="true" />
+            <element signature="e#2608#2609#0" expanded="true" />
+            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="e#2675#2676#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#2777#2778#0" expanded="true" />
+            <element signature="e#2799#2800#0" expanded="true" />
+            <element signature="e#2831#2832#0" expanded="true" />
+            <element signature="e#2863#2864#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -947,20 +877,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2227#2228#0" expanded="true" />
+            <element signature="e#2256#2257#0" expanded="true" />
+            <element signature="e#2300#2301#0" expanded="true" />
+            <element signature="e#2337#2338#0" expanded="true" />
+            <element signature="e#2365#2366#0" expanded="true" />
+            <element signature="e#2386#2387#0" expanded="true" />
+            <element signature="e#2415#2416#0" expanded="true" />
+            <element signature="e#2437#2438#0" expanded="true" />
+            <element signature="e#2465#2466#0" expanded="true" />
+            <element signature="e#2486#2487#0" expanded="true" />
+            <element signature="e#2515#2516#0" expanded="true" />
+            <element signature="e#2537#2538#0" expanded="true" />
+            <element signature="e#2576#2577#0" expanded="true" />
+            <element signature="e#2608#2609#0" expanded="true" />
+            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="e#2675#2676#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#2777#2778#0" expanded="true" />
+            <element signature="e#2799#2800#0" expanded="true" />
+            <element signature="e#2831#2832#0" expanded="true" />
+            <element signature="e#2863#2864#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUIDisplay.java" />
     <entry file="file://$PROJECT_DIR$/src/FreezerCloseButton.java" />
-    <entry file="file://$PROJECT_DIR$/src/settings/refrigerator/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/buttons/refrigerator/FreezerOpenButton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1107,7 +1052,7 @@
         <state relative-caret-position="204">
           <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
-            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1117,18 +1062,6 @@
         <state relative-caret-position="459">
           <caret line="52" column="7" lean-forward="false" selection-start-line="47" selection-start-column="3" selection-end-line="52" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/event/refrigerator/FreezerTemperatureSetEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="e#667#668#0" expanded="true" />
-            <marker date="1501984731659" expanded="true" signature="432:616" ph="/**...*/" />
-            <marker date="1501984731659" expanded="true" signature="685:688" ph=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1279,6 +1212,130 @@
         <state relative-caret-position="272">
           <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/event/refrigerator/FreezerTemperatureSetEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manager/refrigerator/FridgeOpenDoorRequestManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="63" column="5" lean-forward="false" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manager/refrigerator/FridgeCloseDoorRequestManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manager/refrigerator/FreezerOpenDoorRequestManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manager/refrigerator/FreezerTemperatureSetManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="68" column="7" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="68" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manager/refrigerator/FridgeTemperatureSetManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="67" column="7" lean-forward="true" selection-start-line="60" selection-start-column="4" selection-end-line="67" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manager/refrigerator/RoomTemperatureSetManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/refrigerator/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding>
+            <element signature="e#2227#2228#0" expanded="true" />
+            <element signature="e#2256#2257#0" expanded="true" />
+            <element signature="e#2300#2301#0" expanded="true" />
+            <element signature="e#2337#2338#0" expanded="true" />
+            <element signature="e#2365#2366#0" expanded="true" />
+            <element signature="e#2386#2387#0" expanded="true" />
+            <element signature="e#2415#2416#0" expanded="true" />
+            <element signature="e#2437#2438#0" expanded="true" />
+            <element signature="e#2465#2466#0" expanded="true" />
+            <element signature="e#2486#2487#0" expanded="true" />
+            <element signature="e#2515#2516#0" expanded="true" />
+            <element signature="e#2537#2538#0" expanded="true" />
+            <element signature="e#2576#2577#0" expanded="true" />
+            <element signature="e#2608#2609#0" expanded="true" />
+            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="e#2675#2676#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#2777#2778#0" expanded="true" />
+            <element signature="e#2799#2800#0" expanded="true" />
+            <element signature="e#2831#2832#0" expanded="true" />
+            <element signature="e#2863#2864#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manager/refrigerator/FreezerCloseDoorRequestManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/refrigerator/FreezerSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="46" column="7" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="46" selection-end-column="7" />
+          <folding>
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+            <element signature="e#1246#1247#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/refrigerator/FridgeSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="50" column="7" lean-forward="false" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+          <folding>
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

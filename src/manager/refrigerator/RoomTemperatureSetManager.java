@@ -54,13 +54,14 @@ public class RoomTemperatureSetManager {
 //	public void removeRoomTemperatureSetListener(RoomTemperatureSetListener listener) {
 //		listenerList.remove(RoomTemperatureSetListener.class, listener);
 //	}
-	
-	
+
+
 	/**
-	 * Handles the request to set room temperature.
-	 * 
-	 * @param event
-	 *            the Temperature Event object
+	 *
+	 * @param event RoomTemperatureSetEvent event
+	 *              error handling for values not entered
+	 *              within the parameters of the min and max temps
+	 *              for the Room.
 	 */
 	public void processEvent(RoomTemperatureSetEvent event) {
 		
