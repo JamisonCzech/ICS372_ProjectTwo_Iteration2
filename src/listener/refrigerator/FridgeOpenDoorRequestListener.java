@@ -5,7 +5,7 @@ import event.refrigerator.FridgeDoorOpenRequestEvent;
 
 public interface FridgeOpenDoorRequestListener extends EventListener{
 	/**
-	 * Processes cook requests
+	 * Processes door open requests
 	 * 
 	 * @param event
 	 *            the object that represents the event

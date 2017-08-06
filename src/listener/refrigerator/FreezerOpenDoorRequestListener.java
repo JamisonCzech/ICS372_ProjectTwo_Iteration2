@@ -7,7 +7,7 @@ public interface FreezerOpenDoorRequestListener extends EventListener {
 
 	
 	/**
-	 * Processes cook requests
+	 * Processes open door requests
 	 * 
 	 * @param event
 	 *            the object that represents the event
