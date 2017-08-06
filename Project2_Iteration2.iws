@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5d9a1560-7c50-4b91-aa26-4165719b22da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project2_Iteration2.iws" afterPath="$PROJECT_DIR$/Project2_Iteration2.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manager/refrigerator/FreezerCloseDoorRequestManager.java" afterPath="$PROJECT_DIR$/src/manager/refrigerator/FreezerCloseDoorRequestManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manager/refrigerator/FreezerOpenDoorRequestManager.java" afterPath="$PROJECT_DIR$/src/manager/refrigerator/FreezerOpenDoorRequestManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manager/refrigerator/FreezerTemperatureSetManager.java" afterPath="$PROJECT_DIR$/src/manager/refrigerator/FreezerTemperatureSetManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manager/refrigerator/FridgeCloseDoorRequestManager.java" afterPath="$PROJECT_DIR$/src/manager/refrigerator/FridgeCloseDoorRequestManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manager/refrigerator/FridgeOpenDoorRequestManager.java" afterPath="$PROJECT_DIR$/src/manager/refrigerator/FridgeOpenDoorRequestManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manager/refrigerator/FridgeTemperatureSetManager.java" afterPath="$PROJECT_DIR$/src/manager/refrigerator/FridgeTemperatureSetManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manager/refrigerator/RoomTemperatureSetManager.java" afterPath="$PROJECT_DIR$/src/manager/refrigerator/RoomTemperatureSetManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/settings/refrigerator/FreezerSettings.java" afterPath="$PROJECT_DIR$/src/settings/refrigerator/FreezerSettings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/settings/refrigerator/FridgeSettings.java" afterPath="$PROJECT_DIR$/src/settings/refrigerator/FridgeSettings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/settings/refrigerator/Settings.java" afterPath="$PROJECT_DIR$/src/settings/refrigerator/Settings.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -664,7 +654,7 @@
       <workItem from="1501619269811" duration="509000" />
       <workItem from="1501868700804" duration="508000" />
       <workItem from="1501961940463" duration="6778000" />
-      <workItem from="1501979218192" duration="6586000" />
+      <workItem from="1501979218192" duration="6620000" />
     </task>
     <task id="LOCAL-00001" summary="Separated some file chooser and initial values &#10;implantation out of GUIDisplay class.">
       <created>1501967842798</created>
@@ -680,11 +670,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501984941665</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Comments for Manager and Settings packages">
+      <created>1501987905423</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1501987905423</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14381000" />
+    <option name="totallyTimeSpent" value="14415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -729,7 +726,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Separated some file chooser and initial values &#10;implantation out of GUIDisplay class." />
     <MESSAGE value="Comments added..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Comments added..." />
+    <MESSAGE value="Comments for Manager and Settings packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comments for Manager and Settings packages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
