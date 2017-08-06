@@ -11,6 +11,12 @@ public class FridgeOpenButton extends GUIButton {
 		
 	}
 
+	/**
+	 *
+	 * @param source RefrigeratorDisplay source
+	 *               processes Fridge Door open
+	 *               button pushed.
+	 */
 	@Override
 	public void inform(RefrigeratorDisplay source) {
 		FridgeOpenDoorRequestManager.instance()

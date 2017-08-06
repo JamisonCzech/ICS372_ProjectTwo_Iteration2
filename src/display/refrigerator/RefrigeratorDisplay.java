@@ -8,6 +8,9 @@ import context.refrigerator.FridgeContext;
 import timer.refrigerator.FreezerTimer;
 import timer.refrigerator.FridgeTimer;
 
+/**
+ * Abstract class for Observer pattern
+ */
 public abstract class RefrigeratorDisplay extends Observable{
 	
 	protected static FridgeContext fridgeContext;

@@ -13,6 +13,11 @@ public class SetRoomButton extends GUIButton {
 		// TODO Auto-generated constructor stub
 	}
 
+	/**
+	 *
+	 * @param source RefrigeratorDisplay source
+	 *               setter for SetRoomButton
+	 */
 	@Override
 	public void inform(RefrigeratorDisplay source) {
 		RoomTemperatureSetManager.instance()

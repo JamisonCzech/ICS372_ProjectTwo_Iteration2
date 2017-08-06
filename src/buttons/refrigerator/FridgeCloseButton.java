@@ -11,6 +11,12 @@ public class FridgeCloseButton extends GUIButton {
 		
 	}
 
+	/**
+	 *
+	 * @param source RefrigeratorDisplay source
+	 *               processes Fridge Door Closed
+	 *               button pushed.
+	 */
 	@Override
 	public void inform(RefrigeratorDisplay source) {
 		FridgeCloseDoorRequestManager.instance()

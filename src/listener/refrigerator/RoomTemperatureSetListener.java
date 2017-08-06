@@ -14,6 +14,4 @@ public interface RoomTemperatureSetListener extends EventListener{
 	 *            the object that represents the event
 	 */
 	public void roomTemperatureSet(RoomTemperatureSetEvent event);
-	
-
-}
+	}

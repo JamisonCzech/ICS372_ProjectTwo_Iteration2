@@ -13,6 +13,11 @@ public class SetFridgeButton extends GUIButton {
 		
 	}
 
+	/**
+	 *
+	 * @param source RefrigeratorDisplay source
+	 *               setter for SetFridgeButton
+	 */
 	@Override
 	public void inform(RefrigeratorDisplay source) {
 		FridgeTemperatureSetManager.instance()

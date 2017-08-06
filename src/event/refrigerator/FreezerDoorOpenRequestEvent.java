@@ -12,6 +12,4 @@ public class FreezerDoorOpenRequestEvent extends EventObject  {
 	public FreezerDoorOpenRequestEvent(Object source) {
 		super(source);
 	}
-
-
 }

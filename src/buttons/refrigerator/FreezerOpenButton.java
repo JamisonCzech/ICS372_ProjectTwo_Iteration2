@@ -11,6 +11,12 @@ public class FreezerOpenButton extends GUIButton {
 		
 	}
 
+	/**
+	 *
+	 * @param source RefrigeratorDisplay source
+     *               processes Freezer Door open
+     *               button pushed.
+	 */
 	@Override
 	public void inform(RefrigeratorDisplay source) {
 		FreezerOpenDoorRequestManager.instance()
