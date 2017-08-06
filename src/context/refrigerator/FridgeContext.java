@@ -4,6 +4,7 @@ import settings.refrigerator.FridgeSettings;
 import state.refrigerator.FridgeClosedState;
 import state.refrigerator.FridgeState;
 
+//This class initializes and handles the state of the fridge.
 public class FridgeContext {
 	
 	private static RefrigeratorDisplay display;

@@ -3,7 +3,7 @@ import display.refrigerator.RefrigeratorDisplay;
 import event.refrigerator.FreezerDoorOpenRequestEvent;
 import manager.refrigerator.FreezerOpenDoorRequestManager;
 
-//Freezer open button
+//this class derives from the GUI button super class and handles Freezer open button events.
 public class FreezerOpenButton extends GUIButton {
 
 	public FreezerOpenButton(String string) {

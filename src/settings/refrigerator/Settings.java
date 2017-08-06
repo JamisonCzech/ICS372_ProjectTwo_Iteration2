@@ -1,5 +1,5 @@
 package settings.refrigerator;
-
+//Base class for both freezer and fridge and initializes variables being used in them.
 public abstract class Settings {
 	
 	private int lowTemp;
@@ -75,14 +75,5 @@ public abstract class Settings {
 	public int getCurrentTemp() {
 		return currentTemperature;
 	}
-
-	
-	
-	
-
-
-	
-	
-
 
 }

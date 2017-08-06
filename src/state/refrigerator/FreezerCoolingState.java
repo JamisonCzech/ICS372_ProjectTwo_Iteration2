@@ -11,6 +11,8 @@ import timer.refrigerator.FreezerTimerTickedEvent;
 import timer.refrigerator.FreezerTimerTickedListener;
 import timer.refrigerator.FreezerTimerTickedManager;
 
+//The FreezerCoolingState class handles the actual mechanism of the freezer when the freezer is cooling. This class is responsible for decreasing the temperature 
+//of the freezer when the doors are closed until it reaches the desired temperature.
 public class FreezerCoolingState extends FreezerState implements FreezerTimerRanOutListener, FreezerTimerTickedListener, FreezerOpenDoorRequestListener{
 	
 private static FreezerCoolingState instance;

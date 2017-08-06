@@ -3,7 +3,7 @@ import display.refrigerator.RefrigeratorDisplay;
 import event.refrigerator.RoomTemperatureSetEvent;
 import manager.refrigerator.RoomTemperatureSetManager;
 
-//Set room temperature button
+//this class derives from the GUI button super class and handles set room temperature button events.
 public class SetRoomButton extends GUIButton {
 	
 	//RoomTemperatureSetManager tempManager; 

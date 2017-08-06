@@ -11,6 +11,8 @@ import timer.refrigerator.FridgeTimerTickedEvent;
 import timer.refrigerator.FridgeTimerTickedListener;
 import timer.refrigerator.FridgeTimerTickedManager;
 
+//The FridgeCoolingState class handles the actual mechanism of the fridge when the fridge is cooling. This class is responsible for decreasing the temperature 
+//of the fridge when the doors are closed until it reaches the desired temperature.
 public class FridgeCoolingState extends FridgeState implements FridgeTimerRanOutListener, FridgeTimerTickedListener, FridgeOpenDoorRequestListener{
 	
 	private static FridgeCoolingState instance;

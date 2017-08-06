@@ -3,6 +3,7 @@ import java.util.EventListener;
 
 import event.refrigerator.FridgeDoorOpenRequestEvent;
 
+//This is an interface class for fridge open door event listener and is derived from the Event Listener class.
 public interface FridgeOpenDoorRequestListener extends EventListener{
 	/**
 	 * Processes door open requests

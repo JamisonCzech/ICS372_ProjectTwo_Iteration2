@@ -3,6 +3,7 @@ import context.refrigerator.FridgeContext;
 import display.refrigerator.RefrigeratorDisplay;
 import settings.refrigerator.FridgeSettings;
 
+//This is an abstract class that initialize different states of the fridge.
 public abstract class FridgeState {
 
 	protected static FridgeContext fridgeContext;
